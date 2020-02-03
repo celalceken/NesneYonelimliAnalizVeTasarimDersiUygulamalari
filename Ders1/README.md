@@ -1,5 +1,6 @@
 # Java İle Uygulama Geliştirme
 
+Java programlama dilinin temellerini öğrenmek için http://www.w3schools.com/java/ kaynağını kullanabilirsiniz.
 
 ## Java Teknolojisi
 
