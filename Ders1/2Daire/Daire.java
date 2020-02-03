@@ -1,12 +1,15 @@
+/**
+* Daire.java olarak kaydedilmeli.
+*
+*/
+
 public class Daire 
 {
 
     private int x;
     private int y;
     private int yariCap;
-    
-         
-         
+      
     public Daire(int x, int y, int yariCap) {
         this.x = x;
         this.y = y;
