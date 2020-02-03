@@ -4,8 +4,8 @@
 *
 */
 
-import java.util.Scanner; // klavyeden veri okumak için gerekli Scanner sınıfı dahil ediliyor
-import java.text.DecimalFormat; // Sayıların biçimlenmesi için gerekli Sınıf uygulamaya dahil ediliyor
+import java.util.Scanner; // klavyeden veri okumak için gerekli Scanner sınıfı (java.util paketi içerisinde tanımlı) dahil ediliyor
+import java.text.DecimalFormat; // Sayıların biçimlenmesi için gerekli DecimalFormat Sınıfı uygulamaya dahil ediliyor
 
 public class DaireUygulamasi
 {
@@ -28,19 +28,19 @@ public class DaireUygulamasi
                   System.out.print ("Yarıçapı giriniz ");
                   int yariCap = input.nextInt();  //klavyeden int değer okunuyor
                   
-                  //       Scanner sınıfı Üye yöntemleri
+                  /*       Scanner sınıfı Üye yöntemleri
                                 
-                           //public byte nextByte()
-                           //public short nextShort()
-                           //public int nextInt()
-                           //public long nextLong()
+                           public byte nextByte()
+                           public short nextShort()
+                           public int nextInt()
+                           public long nextLong()
                            
-                           //public float nextFloat()
-                           //public double nextDouble()
+                           public float nextFloat()
+                           public double nextDouble()
                          
-                           //public String next() // Boşluğa kadar okur
-                           //public String nextLine() //satır-enter girilene kadar
-                  
+                           public String next() // Boşluğa kadar okur
+                           public String nextLine() //satır-enter girilene kadar
+                  */
                   Daire daire4= new Daire(20,20,yariCap);
                   System.out.println(daire4);
                   System.out.println(daire4.alanHesapla());
@@ -48,7 +48,7 @@ public class DaireUygulamasi
                   
                   System.out.println(daire4.getX());
                   
-                  // Daire alanının virgilden sonra 4 basamak yazdırılması sağlanıyor
+                  // Daire alanının virgülden sonra 4 basamak yazdırılması sağlanıyor
                   DecimalFormat fmt = new DecimalFormat ("0.####");
                   System.out.println(fmt.format(daire4.alanHesapla()));
                      
