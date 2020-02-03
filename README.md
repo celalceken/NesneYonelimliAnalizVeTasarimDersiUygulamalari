@@ -1,6 +1,6 @@
 
 
-# BSM204 Nesne yönelimli analiz ve tasarım dersi uygulamaları.
+# BSM204 Nesne Yönelimli Analiz Ve Tasarım dersi uygulamaları
 
 
 Ders tanıtımı için aşağıdaki bağlantıyı inceleyiniz.
