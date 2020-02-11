@@ -11,3 +11,7 @@ konumu = (20.0,20.0) - rengi= mavi
 konumu = (30.0,50.0) - rengi= mavi
 30.0
 ```
+
+* Uygulamanın sınıf şeması
+
+![](Sekiller/02/SinifSemasi.png)
