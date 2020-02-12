@@ -7,10 +7,17 @@
 * */
 package cc.ders2.cokbicimlilik;
 
-/*import cc.ders2.cokbicimlilik.Daire;
-import cc.ders2.cokbicimlilik.Dikdortgen;
-import cc.ders2.cokbicimlilik.EskenarUcgen;
-import cc.ders2.cokbicimlilik.Sekil;*/
+/* Bir önceki uygulamada geliştirilen sınıfları kullanmak isteseydik
+aşağıdaki gibi modülümüze dahil etmemiz gerekirdi.
+
+import cc.ders2.kalitim.Daire;
+import cc.ders2.kalitim.Dikdortgen;
+import cc.ders2.kalitim.EskenarUcgen;
+import cc.ders2.kalitim.Sekil;
+ya da 
+
+import cc.ders2.kalitim.*;
+*/
 
 public class CokBicimlilikUygulamasi {
 
