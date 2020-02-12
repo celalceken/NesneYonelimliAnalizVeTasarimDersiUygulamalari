@@ -1,8 +1,8 @@
 
 /*
 * Bir modülün duruma göre farklı biçimlerde davranabilmesi özelliğidir.
-* Kalıtımla yakından ilgilidir. temel sınıfın kullanıldığı yerlerde alt sınıflarında kullanılabilmesini ifade eder.
-* Yöntemlerin aşırı yüklenmesi de çok biçimlilik örneğidir.
+* Kalıtımla yakından ilgilidir. Türetilmiş sınıf aynı zamanda temel sınıf gibi ele alınabilir.
+* Yöntemlerin aşırı yüklenmesi de çok biçimlilik (statik) örneğidir.
 *
 * */
 package cc.ders2.cokbicimlilik;
@@ -24,7 +24,7 @@ public class CokBicimlilikUygulamasi {
         Daire daire2= new Daire(20,20,"mavi",1);
         Dikdortgen dikdortgen1= new Dikdortgen(70,55,"sarı",3,6);
 
-        //Farklı tipte veri toplulukları oluşturuşuyor.
+        //Cok bicimlilik sayesinde farklı tipte veri toplulukları oluşturuluyor.
         sekiller[0]=daire1;
         sekiller[1]=daire2;
         sekiller[2]=dikdortgen1;
@@ -36,23 +36,21 @@ public class CokBicimlilikUygulamasi {
 
         System.out.println("*********");
 
+        //Farklı modüller için aynı istemci kod kullanılabilir.
         sekilYazdir(daire1);
         sekilYazdir(dikdortgen1);
 
         sekilYazdir2(daire1);
         sekilYazdir2(dikdortgen1);
 
-
+        //Yazılımlara yeni özellikler daha kolay eklenebilir
         Sekil ucgen1= new EskenarUcgen(10,5,"yeşil",10);
         sekilYazdir(ucgen1);
 
-
-
-
     }
 
+    // cok bicimlilik olmasaydı yeni eklenecek her şekil için istemcinin (sekilYazdir2())  değiştirilmesi gerekecekti.
     public static void sekilYazdir2(Sekil genelSekil){
-        // cok bicimlilik sayesinde sekilYazdir() yontemi icerisinde değişiklik yapmadan farklı şekilleri desteklemesi de sağlanabilir
 
         if (genelSekil instanceof Daire){
             Daire daire = (Daire)genelSekil;
@@ -66,8 +64,8 @@ public class CokBicimlilikUygulamasi {
         }
     }
 
+    // cok bicimlilik sayesinde istemci (sekilYazdir())  içerisinde değişiklik yapmadan farklı şekilleri desteklemesi de sağlanabilir
     public static void sekilYazdir(Sekil genelSekil){
-        // cok bicimlilik sayesinde sekilYazdir() yontemi icerisinde değişiklik yapmadan farklı şekilleri desteklemesi de sağlanabilir
         System.out.println(genelSekil);
         System.out.println("Alanı="+genelSekil.alanHesapla());
     }
