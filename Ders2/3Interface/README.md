@@ -1,5 +1,9 @@
 * Uygulamayı çalıştırmak için
 
+* deneme
+normal yazı
+# başlık 1
+
 ```console
 Orka:~ nyat$ javac -d .  VeritabaniUygulamasi.java VeritabaniIslemleri.java VeritabaniSurucu.java PostgreSQLSurucu.java MySQLSurucu.java 
  
