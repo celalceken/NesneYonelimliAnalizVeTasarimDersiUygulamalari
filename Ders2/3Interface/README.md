@@ -1,8 +1,9 @@
 * Uygulamayı çalıştırmak için
 
 ```console
-Orka:~ nyat$ javac -d .  CokBicimlilikUygulamasi.java Sekil.java Daire.java Dikdortgen.java EskenarUcgen.java 
-Orka:~ nyat$ java cc.ders2.cokbicimlilik.CokBicimlilikUygulamasi
+Orka:~ nyat$ javac -d .  VeritabaniUygulamasi.java VeritabaniIslemleri.java VeritabaniSurucu.java PostgreSQLSurucu.java MySQLSurucu.java 
+ 
+Orka:~ nyat$ java cc.ders2.arayuz.VeritabaniUygulamasi
 
 
 Merhaba dünya
