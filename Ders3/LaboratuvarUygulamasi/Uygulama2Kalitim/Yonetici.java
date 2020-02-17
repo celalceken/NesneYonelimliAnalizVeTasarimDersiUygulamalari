@@ -10,13 +10,13 @@ public class Yonetici extends Kisi {
 
     }
 
-    public void Zam_Yap(int zam){
+    public void zamYap(int zam){
 
         System.out.println("Çalışanlara " + zam + " TL Zam Yapıldı.");
 
     }
 
-    public void MaasHesapla(int sayi) {
+    public void maasHesapla(int sayi) {
 
         int total=sayi*150;
         System.out.println(total);

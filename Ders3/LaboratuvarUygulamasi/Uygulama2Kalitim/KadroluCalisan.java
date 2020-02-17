@@ -9,10 +9,10 @@ public class KadroluCalisan extends Kisi  {
 
     }
 
-    public void MaasHesapla(int sayi) {
+    public void maasHesapla(int sayi) {
 
-        int total=sayi*100;
-        System.out.println(total);
+        int toplam=sayi*100;
+        System.out.println(toplam);
 
 
     }

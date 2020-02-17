@@ -20,7 +20,7 @@ public class Kisi {
         System.out.println("Çalışan Sınıfı Çalışıyor...");
     }
 
-    public void BilgileriGoster(){
+    public void bilgileriGoster(){
 
         System.out.println("İsim : " + isim);
         System.out.println("Maaş : " + maas);
