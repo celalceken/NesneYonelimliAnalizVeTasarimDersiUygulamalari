@@ -8,11 +8,11 @@ public class Kisi {
     private String bolum;
 
 
-    public Kisi(String isim, int maas, String departman) {
+    public Kisi(String isim, int maas, String bolum) {
 
         this.isim = isim;
         this.maas = maas;
-        this.bolum = departman;
+        this.bolum = bolum;
     }
 
     public void calis(){
@@ -24,7 +24,7 @@ public class Kisi {
 
         System.out.println("İsim : " + isim);
         System.out.println("Maaş : " + maas);
-        System.out.println("Departman : " + bolum);
+        System.out.println("Bölüm : " + bolum);
 
     }
 
