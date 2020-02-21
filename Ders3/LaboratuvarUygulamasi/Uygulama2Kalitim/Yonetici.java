@@ -4,9 +4,9 @@ public class Yonetici extends Kisi {
 
 
 
-    public Yonetici(String isim, int maas, String departman) {
+    public Yonetici(String isim, int maas, String bolum) {
 
-        super(isim, maas, departman);
+        super(isim, maas, bolum);
 
     }
 
@@ -18,8 +18,8 @@ public class Yonetici extends Kisi {
 
     public void maasHesapla(int sayi) {
 
-        int total=sayi*150;
-        System.out.println(total);
+        int toplam=sayi*150;
+        System.out.println(toplam);
 
 
     }
