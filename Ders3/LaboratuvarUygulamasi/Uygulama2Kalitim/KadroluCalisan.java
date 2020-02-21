@@ -3,9 +3,9 @@ package ders1.uygulama2;
 public class KadroluCalisan extends Kisi  {
 
 
-    public KadroluCalisan(String isim, int maas, String departman) {
+    public KadroluCalisan(String isim, int maas, String bolum) {
 
-        super(isim, maas, departman);
+        super(isim, maas, bolum);
 
     }
 
