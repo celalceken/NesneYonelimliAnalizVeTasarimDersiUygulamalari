@@ -5,19 +5,22 @@
 
 ```console
 
-nurbanu@nurbanu-N552VW:~/IntellijIDEA/LabUygulamalari/src/ders1$ javac -d . KalitimUygulamasi.java Yonetici.java Personel.java 
-
+nurbanu@nurbanu-N552VW:~/IntellijIDEA/LabUygulamalari/src/ders1$ javac -d . KadroluCalisan.java KalitimUygulamasi.java Kisi.java Yonetici.java 
  
-nurbanu@nurbanu-N552VW:~/IntellijIDEA/LabUygulamalari/src/ders1$ java ders1.uygulama1.KalitimUygulamasi 
 
+nurbanu@nurbanu-N552VW:~/IntellijIDEA/LabUygulamalari/src/ders1$ java ders1.uygulama2.KalitimUygulamasi 
+ 
 
-Ayse Ceylan
-45
-9000
-4500
-
+İsim : Ali
+Maaş : 2500
+Departman : IT
+Çalışanlara 500 TL Zam Yapıldı.
+3000
+İsim : Ayse
+Maaş : 2000
+Departman : muhasebe
+2000
 
 
 ```
-
 

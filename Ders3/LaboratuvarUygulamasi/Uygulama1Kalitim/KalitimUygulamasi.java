@@ -1,21 +1,17 @@
-package ders1.uygulama1;
+package ders1.uygulama2;
 
 public class KalitimUygulamasi {
 
     public static void main(String[] args) {
 
-        Yonetici yonetici =new Yonetici();
-        yonetici.setAd("ayse");
-        yonetici.setSoyad("ceylan");
-        yonetici.setYasi(45);
-        yonetici.setEkFatura(9000);
-        yonetici.setCalismaGunuHesapla(30);
-        System.out.println(yonetici.getAd());
-        System.out.println(yonetici.getSoyad());
-        System.out.println(yonetici.getYasi());
-        System.out.println(yonetici.getEkfatura());
-        System.out.println(yonetici.getCalismaGunuHesapla());
+        Yonetici y = new Yonetici("Ali",2500, "IT");
+        y.bilgileriGoster();
+        y.zamYap(500);
+        y.maasHesapla(20);
+
+        KadroluCalisan kadrolu=new KadroluCalisan("Ayse",2000,"muhasebe");
+        kadrolu.bilgileriGoster();
+        kadrolu.maasHesapla(20);
 
     }
-
 }

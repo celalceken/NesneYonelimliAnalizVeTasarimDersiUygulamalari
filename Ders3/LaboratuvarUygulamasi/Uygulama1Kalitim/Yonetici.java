@@ -1,19 +1,27 @@
-package ders1.uygulama1;
+package ders1.uygulama2;
+
+public class Yonetici extends Kisi {
 
 
 
-public class Yonetici extends Personel {
+    public Yonetici(String isim, int maas, String bolum) {
 
-  private int EkFatura;
+        super(isim, maas, bolum);
 
-    public Integer getEkfatura()
-    {
-        return EkFatura;
     }
 
-    public void setEkFatura(int EkFatura)
-    {
-        this.EkFatura=EkFatura;
+    public void zamYap(int zam){
+
+        System.out.println("Çalışanlara " + zam + " TL Zam Yapıldı.");
+
+    }
+
+    public void maasHesapla(int sayi) {
+
+        int toplam=sayi*150;
+        System.out.println(toplam);
+
+
     }
 
 
