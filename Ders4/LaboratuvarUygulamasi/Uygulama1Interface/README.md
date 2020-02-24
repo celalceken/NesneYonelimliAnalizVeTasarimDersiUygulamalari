@@ -8,9 +8,9 @@ YaziciArayüzü Interface'i tipinde değişken oluşturulmuş, YaziciArayüzünd
 
 ### Uygulamada istenen;
 
-1-Uygulamayı içeren kodu indirip çalıştırmaları.
+1-Uygulamayı içeren kodu indirip çalıştırmak.
 
-2-YaziciArayüzün'den implement edilecek farklı sınıf yapıları oluşturmaları.
+2-YaziciArayüzün'den implement edilecek farklı sınıf yapıları oluşturmak.
 
 
 * Uygulamanın sınıf şeması
