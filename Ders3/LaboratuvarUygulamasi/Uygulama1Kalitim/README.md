@@ -24,6 +24,5 @@ Bölüm : muhasebe
 ```
 
 
-## Ortamın Kurulması
-* İlgili Video;
-  + https://www.youtube.com/watch?v=XpJElFJdQb0
+## Uygulama geliştirme ortamının oluşturulması
+  * https://www.youtube.com/watch?v=XpJElFJdQb0
