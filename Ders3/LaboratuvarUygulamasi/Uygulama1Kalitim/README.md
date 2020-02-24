@@ -1,7 +1,9 @@
 
 # Laboratuvar Uygulaması
 
-
+# Ortamın Kurulması
+* İlgili Video;
+  + https://www.youtube.com/watch?v=XpJElFJdQb0
 
 ```console
 
