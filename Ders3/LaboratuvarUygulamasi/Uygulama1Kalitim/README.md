@@ -2,7 +2,6 @@
 # Laboratuvar Uygulaması
 
 
-
 ```console
 
 nurbanu@nurbanu-N552VW:~/IntellijIDEA/LabUygulamalari/src/ders1$ javac -d . KadroluCalisan.java KalitimUygulamasi.java Kisi.java Yonetici.java 
@@ -24,3 +23,7 @@ Bölüm : muhasebe
 
 ```
 
+
+## Ortamın Kurulması
+* İlgili Video;
+  + https://www.youtube.com/watch?v=XpJElFJdQb0
