@@ -1,3 +1,6 @@
+# Uygulama Geliştirme Ortamının Oluşturulması
+  * https://www.youtube.com/watch?v=XpJElFJdQb0
+
 # Java İle Uygulama Geliştirme
 
 Java programlama dilinin temellerini öğrenmek için kullanabileceğiniz kaynaklar:
