@@ -5,6 +5,7 @@ Abstract sınıf ve Interface arasındaki kullanım farklılıklarını barınd�
 ## Uygulamada istenen;
 
 1-Uygulamayı içeren kodu indirip çalıştırmaları.
+
 2-Çoklu interface'i gerçekleyecek şekilde kodun modifiye edilmesi.
 
 
