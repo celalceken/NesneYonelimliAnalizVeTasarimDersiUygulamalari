@@ -13,7 +13,7 @@ nurbanu@nurbanu-N552VW:~/IntellijIDEA/LabUygulamalari/src/ders1$ java ders1.uygu
 
 İsim : Ali
 Maaş : 2500
-Departman : IT
+Bölüm : IT
 Çalışanlara 500 TL Zam Yapıldı.
 3000
 İsim : Ayse
