@@ -18,7 +18,7 @@ Departman : IT
 3000
 İsim : Ayse
 Maaş : 2000
-Departman : muhasebe
+Bölüm : muhasebe
 2000
 
 
