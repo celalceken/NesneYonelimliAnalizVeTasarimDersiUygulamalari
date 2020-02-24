@@ -1,5 +1,5 @@
 
-## Uygulamada istenen;
+## İstenenler:
 
 * Sınıf şeması verilen modeli (aşağıda) gerçekleyiniz.  
 
