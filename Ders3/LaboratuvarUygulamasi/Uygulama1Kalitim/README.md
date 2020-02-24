@@ -1,7 +1,7 @@
 
 # Laboratuvar Uygulaması
 
-# Ortamın Kurulması
+## Ortamın Kurulması
 * İlgili Video;
   + https://www.youtube.com/watch?v=XpJElFJdQb0
 
