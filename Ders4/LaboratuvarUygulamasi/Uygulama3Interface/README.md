@@ -1,10 +1,7 @@
 
 ## Uygulamada istenen;
 
-1-Aşağıda UML'i verilen kodun gerçeklenmesi.
+* Sınıf şeması verilen modelin (aşağıda) gerçekleyiniz.  
 
-
-
-* Uygulamanın sınıf şeması
 
 ![](https://github.com/celalceken/NesneYonelimliAnalizVeTasarimDersiUygulamalari/blob/master/Sekiller/02/UygulamaInterface3.png)
