@@ -1,4 +1,4 @@
-### Uygulama
+## Uygulama
 
 Interface'in dışında, nesnenin sorumluluğunu başka bir nesneye vererek soyutlama yapan delegasyon işlemi de gerçeklenmektedir.
 
@@ -6,7 +6,7 @@ Uygulamada, YaziciArayüzü Interface'inden sadece HPYazici sınıfı implement 
 YaziciArayüzü Interface'i tipinde değişken oluşturulmuş, YaziciArayüzünden oluşturulan herhangi nesne için moduler kod bloğu yapısı sağlanmıştır.
 
 
-## Uygulamada istenen;
+### Uygulamada istenen;
 
 1-Uygulamayı içeren kodu indirip çalıştırmaları.
 2-YaziciArayüzün'den implement edilecek farklı sınıf yapıları oluşturmaları.
