@@ -1,12 +1,9 @@
 ## İstenenler:
 
-* Personel ve Musteri sınıflarını Kisi sınıfından türetiniz.
+* Kisi sınıfını oluşturunuz.
+* Kisi sınıfından Personel ve Musteri sınıflarını türetiniz.
+* Uygulama sınıfı içerisinde, 2 müşteriye ait bilgileri (adresler dahil) klavyeden alınız (ilgili nesneleri oluşturunuz). Daha sonra, oluşturulan müşterilere ait bilgileri (ad,soyad, .. , adresler vb.) toString() yöntemini kullanarak ekrana yazdırınız.
 
-* isAdresi ve evAdresi değişkenlerinin ayrıntılı adres bilgilerini Adres tablosundan elde edecek şekilde tasarlayınız. Bunu yaparken nesneye yönelimli paradigmayı kullanmaya özen gösteriniz.
-
-* Uygulama sınıfı içerisinde müşteri bilgilerini klavyeden okutup, toString yöntemi aracılığıyla ekrana yazdırma işlemini gerçekleştiriniz.
-
-* Aşağıdaki sınıf şemasında yer alan tüm sınıf ve yöntemleri gerçekleyerek, ayrıca yukarda anlatılanları göz önüne alarak, uygulamayı kodlayınız.
 
 ![](https://github.com/celalceken/NesneYonelimliAnalizVeTasarimDersiUygulamalari/blob/master/Sekiller/02/UygulamaHafta5.png)
 
