@@ -1,10 +1,13 @@
 ## İstenenler:
 
-* Kaynak kodları verilen uygulamayı gerçekleyiniz.
+* Personel ve Musteri sınıflarını Kisi sınıfından türetiniz.
+
+* İsAdresi ve evAdresi değişkenlerinin ayrıntılı adres bilgilerini Adres tablosundan elde edecek şekilde tasarlayınız. Bunu yaparken nesneye yönelimli paradigmayı kullanmaya özen gösteriniz.
+
+* Anasınıfta müşteri bilgilerini klavyeden okutup, toString metodu aracılığıyla ekrana yazdırma işlemini gerçekleştiriniz.
+
+* Aşağıdaki sınıf şemasında yer alan tüm sınıf ve metodları gerçekleyerek ayrıca yukarda anlatılanları göz önüne alarak uygulamayı kodlayınız.
+
+![](https://github.com/celalceken/NesneYonelimliAnalizVeTasarimDersiUygulamalari/blob/master/Sekiller/02/UygulamaHafta5.png)
 
 
-* Aşağıdaki sınıf şemasında yer alan diğer yazıcı türlerini de gerçekleyerek uygulama içerisinde kullanınız.
-
-![](https://github.com/celalceken/NesneYonelimliAnalizVeTasarimDersiUygulamalari/blob/master/Sekiller/02/UygulamaInterface.png)
-
-* Geçtiğimiz derste oluşturulan daire nesnesine ait; konum, yarıçap ve alan bilgilerinin yazdırılması isteniyor. Bu ders kapsamında oluşturulan YaziciSurucu modülünü kullanarak bu işlemin farklı farklı yazıcılar tarafından gerçekleştirilmesini sağlayınız.
