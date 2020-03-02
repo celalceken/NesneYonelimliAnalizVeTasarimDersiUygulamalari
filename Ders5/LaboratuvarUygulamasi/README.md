@@ -2,7 +2,7 @@
 
 * Personel ve Musteri sınıflarını Kisi sınıfından türetiniz.
 
-* İsAdresi ve evAdresi değişkenlerinin ayrıntılı adres bilgilerini Adres tablosundan elde edecek şekilde tasarlayınız. Bunu yaparken nesneye yönelimli paradigmayı kullanmaya özen gösteriniz.
+* isAdresi ve evAdresi değişkenlerinin ayrıntılı adres bilgilerini Adres tablosundan elde edecek şekilde tasarlayınız. Bunu yaparken nesneye yönelimli paradigmayı kullanmaya özen gösteriniz.
 
 * Anasınıfta müşteri bilgilerini klavyeden okutup, toString metodu aracılığıyla ekrana yazdırma işlemini gerçekleştiriniz.
 
