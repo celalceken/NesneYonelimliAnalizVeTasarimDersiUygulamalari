@@ -92,14 +92,14 @@ public class ATM
 
 	private int anaMenuyuGoster()
 	{
-		ekran.mesajGoruntule("**********************************************");
+		ekran.mesajGoruntule("******************************************");
 		ekran.mesajGoruntule("Ana Menu");
 		ekran.mesajGoruntule("1-Bakiye Görüntüle");
 		ekran.mesajGoruntule("2-Para Çek");
 		ekran.mesajGoruntule("3-Para Yatır");
 		ekran.mesajGoruntule("4-Cikis");
 		ekran.mesajGoruntule("Seciminiz:");
-		ekran.mesajGoruntule("**********************************************");
+		ekran.mesajGoruntule("******************************************");
 
 		return tusTakimi.veriAl();
 	}
