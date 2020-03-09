@@ -1,8 +1,8 @@
 ## İstenenler:
 
-* Siparis ve diğer tüm sınıfları (SiparişKalemi, Urun, Uygulama) oluşturunuz.
-* Uygulama sınıfı içerisinde, 2 adet sipariş bilgisini (birim fiyat dahil) klavyeden alınız (en az 2 ya da 3 ürün bulunmalı).
-Daha sonra, oluşturulan siparişlere ait bilgileri (ad, birim fiyat, .. , siparis tarihi vb.) ekrana yazdırınız.
+* Siparis, SiparisKalemi, Urun ve Uygulama sınıflarını oluşturunuz.
+* Uygulama sınıfında yer alan main() içerisinde 2 adet sipariş oluşturunuz ( Sipariş bilgilerini klavyeden alınız. Siparişler içerisinde 2 ya da 3 ürün bulunmalıdır).
+* Oluşturulan siparişlere ait bilgileri (ürün bilgileri de yer almalıdır) ekrana yazdırınız.
 
 
 ![](https://github.com/celalceken/NesneYonelimliAnalizVeTasarimDersiUygulamalari/blob/master/Sekiller/02/UygulamaHafta6.png)
