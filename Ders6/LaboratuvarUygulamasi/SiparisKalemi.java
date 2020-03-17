@@ -1,38 +1,36 @@
-package ders4.uygulama1;
+package cc.ders6.siparis;
 
 public class SiparisKalemi {
     private Urun urun;
-    private Siparis siparis;
-    private Integer miktar;
+    private int miktar;
+    private double siparisBirimFiyati;
 
-    public Urun getUrun() {
-        return urun;
+    public SiparisKalemi(String urunAdi, int miktar, double siparisBirimFiyati) {
+        this.urun = new Urun(urunAdi);
+        this.miktar = miktar;
+        this.siparisBirimFiyati = siparisBirimFiyati;
     }
 
-    public Integer getMiktar() {
+
+    public int getMiktar() {
         return miktar;
     }
 
-    public void setUrun(Urun urun) {
-        this.urun = urun;
+    public double getSiparisBirimFiyati() {
+        return siparisBirimFiyati;
     }
 
-    public void setMiktar(Integer miktar) {
-        this.miktar = miktar;
-    }
-
-    public SiparisKalemi(Urun urun, Siparis siparis, Integer miktar) {
-        this.urun = urun;
-        this.siparis = siparis;
-        this.miktar = miktar;
+    public double araToplam(){
+        return this.getMiktar()*this.getSiparisBirimFiyati();
     }
 
     @Override
     public String toString() {
         return "SiparisKalemi{" +
-                "urun=" + urun +
-                ", siparisKalemi=" + siparis +
+                "urun=" + urun.getAd() +
                 ", miktar=" + miktar +
+                ", siparisBirimFiyati=" + siparisBirimFiyati +
+                ", ara toplam=" + this.araToplam() +
                 '}';
     }
 }

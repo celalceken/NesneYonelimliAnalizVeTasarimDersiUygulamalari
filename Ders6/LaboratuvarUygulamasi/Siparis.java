@@ -1,18 +1,20 @@
-package ders4.uygulama1;
+package cc.ders6.siparis;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Siparis {
-    private Integer siparisNo;
-    private String siparisTarihi;
-    private List<SiparisKalemi> siparisler = new ArrayList<SiparisKalemi>();
+    private int siparisNo;
+    private LocalDateTime siparisTarihi;
+    private double genelToplam;
+    private List<SiparisKalemi> siparisKalemleri = new ArrayList<SiparisKalemi>();
 
     public Integer getSiparisNo() {
         return siparisNo;
     }
 
-    public String getSiparisTarihi() {
+    public LocalDateTime getSiparisTarihi() {
         return siparisTarihi;
     }
 
@@ -20,38 +22,38 @@ public class Siparis {
         this.siparisNo = siparisNo;
     }
 
-    public void setSiparisTarihi(String siparisTarihi) {
+    public void setSiparisTarihi(LocalDateTime siparisTarihi) {
         this.siparisTarihi = siparisTarihi;
     }
 
-    public List<SiparisKalemi> getSiparisler() {
-        return siparisler;
+    public List<SiparisKalemi> getSiparisKalemleri() {
+        return siparisKalemleri;
     }
 
-    public void setSiparisler(List<SiparisKalemi> siparisler) {
-        this.siparisler = siparisler;
+    public void setSiparisKalemleri(List<SiparisKalemi> siparisKalemleri) {
+        this.siparisKalemleri = siparisKalemleri;
     }
 
-    public Siparis(Integer siparisNo, String siparisTarihi) {
+    public Siparis(int siparisNo) {
         this.siparisNo = siparisNo;
-        this.siparisTarihi = siparisTarihi;
+        this.siparisTarihi = LocalDateTime.now();
+        this.genelToplam=0;
     }
 
-    public void sepeteEkle(Urun urun, Siparis siparis, Integer miktar)
+    public void sepeteEkle(String urunAdi, int miktari, double siparisBirimFiyati)
     {
-        SiparisKalemi siparisKalemi = new SiparisKalemi(urun, siparis, miktar);
-        siparisler.add(siparisKalemi);
+        SiparisKalemi siparisKalemi = new SiparisKalemi(urunAdi, miktari, siparisBirimFiyati);
+        genelToplam+=siparisKalemi.araToplam();
+        siparisKalemleri.add(siparisKalemi);
     }
-
-    public void siparisGoster() { System.out.println(siparisler);}
 
     @Override
     public String toString() {
         return "Siparis{" +
-                "siparisNo=" + siparisNo +
-                ", siparisTarihi='" + siparisTarihi + '\'' +
+                "Sipariş No=" + siparisNo +
+                ", Sipariş Tarihi=" + siparisTarihi +
+                ", Genel Toplam=" + genelToplam +
+                ", Sipariş Kalemleri=" + siparisKalemleri +
                 '}';
     }
-
-
 }

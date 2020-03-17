@@ -1,9 +1,9 @@
 ## İstenenler:
 
 * Siparis, SiparisKalemi, Urun ve Uygulama sınıflarını oluşturunuz.
-* Uygulama sınıfında yer alan main() içerisinde 2 adet sipariş oluşturunuz ( Sipariş bilgilerini klavyeden alınız. Siparişler içerisinde 2 ya da 3 ürün bulunmalıdır).
-* Aldığınız siparişleri, Sipariş sınıfının içinde oluşan sepeteEkle fonksiyonu yardımıyla listeye ekleyiniz.
-* Sepete eklenen siparişlere ait bilgileri (ürün bilgileri de yer almalıdır) ekrana yazdırınız.
+* Uygulama sınıfında yer alan main() içerisinde 1 adet sipariş nesnesi oluşturunuz ( Sipariş bilgilerini klavyeden alınız. Siparişler içerisinde çok sayıda ürün (sipariş kalemi) bulunabilmelidir).
+* Sipariş kalemleri, sipariş sınıfında yer alan sepeteEkle yöntemi yardımıyla sipariş içerisine eklenmelidir.
+* Sipariş bilgilerini ekrana yazdırınız.
 
 
 ![](https://github.com/celalceken/NesneYonelimliAnalizVeTasarimDersiUygulamalari/blob/master/Sekiller/02/UygulamaHafta6.png)
