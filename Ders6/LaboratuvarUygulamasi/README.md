@@ -6,6 +6,6 @@
 * Sipariş bilgilerini ekrana yazdırınız.
 
 
-![](https://github.com/celalceken/NesneYonelimliAnalizVeTasarimDersiUygulamalari/blob/master/Sekiller/02/UygulamaHafta6.png)
+![](https://github.com/celalceken/NesneYonelimliAnalizVeTasarimDersiUygulamalari/blob/master/Sekiller/06/LaboratuvarUygulamasi6.png)
 
 
