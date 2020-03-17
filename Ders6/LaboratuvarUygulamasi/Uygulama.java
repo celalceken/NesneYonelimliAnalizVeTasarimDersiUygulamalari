@@ -49,7 +49,7 @@ public class Uygulama {
 
         siparis.sepeteEkle(urun,siparis,miktar);
         siparis.sepeteEkle(urun1,siparis1,miktar1);
-        siparis.ekranaBas();
+        siparis.siparisGoster();
 
 
     }

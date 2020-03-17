@@ -43,7 +43,7 @@ public class Siparis {
         siparisler.add(siparisKalemi);
     }
 
-    public void ekranaBas() { System.out.println(siparisler);}
+    public void siparisGoster() { System.out.println(siparisler);}
 
     @Override
     public String toString() {
