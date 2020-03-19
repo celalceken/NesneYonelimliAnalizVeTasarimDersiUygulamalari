@@ -1,4 +1,4 @@
-package ders3.uygulama1;
+package cc.ders5;
 
 
 import javax.print.DocFlavor;
@@ -8,6 +8,13 @@ public class Personel extends Kisi{
 
     private int sicilNO;
     private String bolum;
+
+    public Personel(String ad, String soyad, Adres evAdresi,int sicilNo,String bolum) {
+        super(ad, soyad, evAdresi);
+        this.sicilNO=sicilNo;
+        this.bolum=bolum;
+
+    }
 
     public int getSicilNO() {
         return sicilNO;

@@ -1,10 +1,10 @@
 ## İstenenler:
 
-* Kisi sınıfını oluşturunuz.
+* Soyut Kisi sınıfını oluşturunuz.
 * Kisi sınıfından Personel ve Musteri sınıflarını türetiniz.
-* Uygulama sınıfı içerisinde, 2 müşteriye ait bilgileri (adresler dahil) klavyeden alınız (ilgili nesneleri oluşturunuz). Daha sonra, oluşturulan müşterilere ait bilgileri (ad,soyad, .. , adresler vb.) toString() yöntemini kullanarak ekrana yazdırınız.
+* Uygulama sınıfı içerisinde, çok sayıda müşteriye ait bilgileri (adresler dahil) klavyeden alınız (ilgili nesneleri oluşturunuz). Daha sonra, oluşturulan müşterilere ait bilgileri  ekrana yazdırınız.
 
 
-![](https://github.com/celalceken/NesneYonelimliAnalizVeTasarimDersiUygulamalari/blob/master/Sekiller/02/UygulamaHafta5.png)
+![](https://github.com/celalceken/NesneYonelimliAnalizVeTasarimDersiUygulamalari/blob/master/Sekiller/05/UygulamaHafta5.png)
 
 

@@ -1,57 +1,52 @@
-package ders3.uygulama1;
+package cc.ders5;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 public class Uygulama {
-        public static void main(String args[]) throws IOException {
 
-                char cevap;
-                List<Musteri> musteriler = new ArrayList<Musteri> ();
+    public static void main(String args[]){
 
-                do {
-                        Scanner input = new Scanner(System.in);
-                        System.out.print("Müsterinin adini giriniz= ");
-                        String ad = input.nextLine();
+        Scanner giris = new Scanner(System.in);
 
-                        System.out.print("Müsterinin soyadını giriniz= ");
-                        String soyad = input.nextLine();
+        List<Musteri> musteriListesi = new ArrayList<Musteri>();
 
-                        System.out.print("Ev adresini giriniz= ");
-                        Adres evAdresi = new Adres();
-                        evAdresi.setAdresSatiri(input.nextLine());
-                        System.out.print("Ev adresine ekleme yapabilirsiniz= ");
-                        evAdresi.setAdresSatiri2(input.nextLine());
-                        System.out.print("Ev adresi il bilgisini giriniz= ");
-                        evAdresi.setIl(input.nextLine());
+        System.out.println("**********Müşteri Bilgilerini Giriniz*********");
 
-                        Scanner input2 = new Scanner(System.in);
-                        System.out.print("Telefon no giriniz= ");
-                        Integer telNo = input2.nextInt();
+        String cevap=null;
+        String adi=null;
+        String soyadi=null;
+        String telefonNo=null;
+        String adresSatiri=null;
+        String il=null;
+        Adres evAdresi=null;
+        Adres isAdresi=null;
 
-                        System.out.print("İş adresini giriniz= ");
-                        Adres isAdresi = new Adres();
-                        isAdresi.setAdresSatiri(input.nextLine());
-                        System.out.print("İş adresine ekleme yapabilirsiniz= ");
-                        isAdresi.setAdresSatiri2(input.nextLine());
-                        System.out.print("İş adresi il bilgisini giriniz= ");
-                        isAdresi.setIl(input.nextLine());
+        do{
+            System.out.println("Müşteri adını soyadını telefon numarasını giriniz:");
+            adi=giris.nextLine();
+            soyadi=giris.nextLine();
+            telefonNo=giris.nextLine();
 
-                        Musteri musterigecici = new Musteri(telNo, isAdresi, evAdresi, ad, soyad);
-                        musteriler.add(musterigecici);
-                        System.out.println("Devam etmek istiyor musunuz ?");
-                        cevap = (char) System.in.read();
-                        input.nextLine();
+            System.out.println("Ev adresinin, adres ve il bilgilerini giriniz:");
+            adresSatiri=giris.nextLine();
+            il=giris.nextLine();
+            evAdresi=new Adres(adresSatiri,il);
 
-                }while(cevap!='h');
+            System.out.println("İş adresinin, adres ve il bilgilerini giriniz:");
+            adresSatiri=giris.nextLine();
+            il=giris.nextLine();
+            isAdresi=new Adres(adresSatiri,il);
 
+            musteriListesi.add(new Musteri(adi,soyadi,evAdresi,telefonNo,isAdresi));
 
-                for(Musteri str : musteriler) {
-                        System.out.println(str.toString());
-                }
+            System.out.println("Eklemek istediğiniz kayıt var mı (e/h)?");
+            cevap=giris.nextLine();
 
-        }
+        }while(cevap.equalsIgnoreCase("E"));
 
+        for(Musteri musteri:musteriListesi)
+            System.out.println(musteri.getAd()+" "+musteri.getSoyad()+" "+ musteri.getEvAdresi().toString()+" "+musteri.getIsAdresi());
+    }
 }

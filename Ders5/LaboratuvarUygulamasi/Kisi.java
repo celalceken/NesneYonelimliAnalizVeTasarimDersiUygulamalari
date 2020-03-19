@@ -1,10 +1,16 @@
-package ders3.uygulama1;
+package cc.ders5;
 
-public class Kisi {
+public abstract class Kisi {
 
     private String ad;
     private String soyad;
     private Adres evAdresi;
+
+    public Kisi(String ad, String soyad, Adres evAdresi) {
+        this.ad = ad;
+        this.soyad = soyad;
+        this.evAdresi = evAdresi;
+    }
 
     public String getAd() {
         return ad;
@@ -28,4 +34,5 @@ public class Kisi {
 
     public void setEvAdresi(Adres evAdresi) { this.evAdresi = evAdresi;
     }
+
 }
