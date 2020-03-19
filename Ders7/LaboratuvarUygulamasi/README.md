@@ -5,4 +5,4 @@
 * Uygulama içerisinde önce müşteri, sonrasında sipariş oluşturulmalıdır. Sipariş içerisine sipariş kalemleri eklenmelidir. 
 
 
-![](https://github.com/celalceken/NesneYonelimliAnalizVeTasarimDersiUygulamalari/blob/master/Sekiller/07/UygulamaHafta7.png)
+![](https://github.com/celalceken/NesneYonelimliAnalizVeTasarimDersiUygulamalari/blob/master/Sekiller/07/LaboratuvarUygulamasi7.png)
