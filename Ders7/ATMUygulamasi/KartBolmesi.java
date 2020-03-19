@@ -1,4 +1,4 @@
-package cc.ders3.myatm;
+package cc.ders7.atm;
 
 public class KartBolmesi implements IKartBolmesi {
     public void kartAl() {

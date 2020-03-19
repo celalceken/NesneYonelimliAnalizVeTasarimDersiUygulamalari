@@ -1,4 +1,4 @@
-package cc.ders3.myatm;
+package cc.ders7.atm;
 
 import java.util.Scanner;
 
