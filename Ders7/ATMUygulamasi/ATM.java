@@ -1,18 +1,15 @@
 package cc.ders7.atm;
 
 
-
 public class ATM
 {
-
-	private boolean userAuthenticated;
 	private IEkran ekran;
 	private ITusTakimi tusTakimi;
 	private IParaBolmesi paraBolmesi;
 	private IKartBolmesi kartBolmesi;
 
 
-	// constants corresponding to main menu options
+	// ana menu seçenekleri
 	private static final int BAKIYE_GORUNTULE = 1;
 	private static final int PARA_CEKME = 2;
 	private static final int PARA_YATIRMA = 3;
@@ -21,7 +18,7 @@ public class ATM
 
 
 	public ATM() 
-	{	userAuthenticated=false;
+	{	
 		ekran=new Ekran();
 		tusTakimi=new TusTakimi();
 		paraBolmesi=new ParaBolmesi();
@@ -38,7 +35,7 @@ public class ATM
 			if (kullaniciHesabi!=null){
 				ekran.mesajGoruntule(kullaniciHesabi.toString());
 				islemSecimi(bankaBilgiSistemi, kullaniciHesabi);
-				//bankaBilgiSistemi.hesapGuncelle(kullaniciHesabi);
+				
 			} else{
 				ekran.mesajGoruntule("doğrulanamadı");
 
