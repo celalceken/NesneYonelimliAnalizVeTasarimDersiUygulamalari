@@ -149,8 +149,24 @@ public class UrunRepositoryPostgreSQL {
         }
     }
 
+    public void degistir(Urun urun) {
 
+        String sql= "UPDATE \"Urun\" SET \"adi\"=\'"+urun.getAdi()+
+                "\', \"birimFiyati\"="+urun.getBirimFiyati()+
+                ",\"stokMiktari\"="+urun.getStokMiktari()+
+                " WHERE \"urunNo\"="+urun.getUrunNo();
 
+        Connection conn=this.baglan();
 
-
+        try
+        {
+            Statement stmt = conn.createStatement();
+            stmt.executeUpdate(sql);
+            //***** Bağlantı sonlandırma *****
+            conn.close();
+            stmt.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }

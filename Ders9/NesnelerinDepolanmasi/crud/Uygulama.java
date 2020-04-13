@@ -69,7 +69,7 @@ public class Uygulama {
 
         urunRepository.kaydet(urun);
 
-//*/
+
 
         System.out.println("******************Silme**************************");
 
@@ -81,6 +81,45 @@ public class Uygulama {
         System.out.println("Silmek istediğiniz ürünün numarasını giriniz:");
         urunNo=giris.nextInt(); giris.nextLine();
         urunRepository.sil(urunNo);
+
+//*/
+
+        System.out.println("******************Değişiklik**************************");
+
+        //List<Urun> urunlerinListesi;
+
+        urunlerinListesi= urunRepository.tumUrunler();
+        System.out.println(urunlerinListesi);
+
+        System.out.println("Değiştirmek istediğiniz ürünün adını giriniz:");
+        String degisecekUrununAdi=giris.nextLine();
+
+        //urun= urunRepository.ara(urunNo);
+
+        urun = urunlerinListesi.stream()
+                .filter(urunElementi -> degisecekUrununAdi.equalsIgnoreCase(urunElementi.getAdi()))
+                .findAny()
+                .orElse(null);
+
+        if(urun!=null){
+
+            System.out.println("Değiştirmek istediğiniz ürün:"+urun);
+
+            System.out.println("Ürünün yeni adını giriniz:");
+            urunAdi=giris.nextLine();
+
+            System.out.println("ürünün yeni birim fiyatını ve stok miktarı giriniz");
+            birimFiyati=giris.nextDouble();
+            stokMiktari=giris.nextInt(); giris.nextLine();
+
+            urun.setAdi(urunAdi);
+            urun.setBirimFiyati(birimFiyati);
+            urun.setStokMiktari(stokMiktari);
+            urunRepository.degistir(urun);
+
+        }
+        else
+            System.out.println("aradığınız ürün bulunamadı");
 
 
     }
