@@ -1,4 +1,4 @@
-package cc.ders9.nesnelerindepolanmasi;
+package cc.ders9.nesnelerindepolanmasi.siparis;
 
 import java.util.List;
 

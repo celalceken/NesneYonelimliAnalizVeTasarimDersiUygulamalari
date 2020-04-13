@@ -1,4 +1,4 @@
-package cc.ders9.nesnelerindepolanmasi;
+package cc.ders9.nesnelerindepolanmasi.siparis;
 
 import java.util.List;
 import java.util.Scanner;
@@ -21,7 +21,7 @@ public class Uygulama {
         List<Urun> urunlerinListesi;
 
         do{
-            UrunVeritabaniServisi urunler=new UrunPostgreSQLSurucu();
+            IUrunVeritabaniServisi urunler=new UrunPostgreSQLSurucu();
             urunlerinListesi= urunler.urunListele();
             System.out.println(urunlerinListesi);
 
@@ -52,7 +52,7 @@ public class Uygulama {
 
         System.out.println("Sipariş bilgileriniz:"+siparis);
 
-        SiparisVeritabaniServisi siparisVTIslemleri=new SiparisPostgreSQLSurucu();
+        ISiparisVeritabaniServisi siparisVTIslemleri=new SiparisPostgreSQLSurucu();
         siparisVTIslemleri.siparisiKaydet(siparis);
     }
 }

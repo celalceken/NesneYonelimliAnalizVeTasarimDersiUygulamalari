@@ -1,4 +1,4 @@
-package cc.ders9.nesnelerindepolanmasi;
+package cc.ders9.nesnelerindepolanmasi.siparis;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -7,7 +7,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-public class UrunPostgreSQLSurucu implements UrunVeritabaniServisi {
+public class UrunPostgreSQLSurucu implements IUrunVeritabaniServisi {
 
 
 
