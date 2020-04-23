@@ -3,7 +3,7 @@ package cc.ders10.ocp.uygulama1;
 import javax.json.Json;
 import javax.json.JsonObject;
 
-public class FaturaOlustur {
+public class FaturaServisi {
 
     ///*
     public String faturaOlustur(Fatura fatura){

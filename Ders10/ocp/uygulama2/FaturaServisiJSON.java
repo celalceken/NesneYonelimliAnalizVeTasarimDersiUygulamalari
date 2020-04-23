@@ -4,7 +4,7 @@ package cc.ders10.ocp.uygulama2;
 import javax.json.Json;
 import javax.json.JsonObject;
 
-public class FaturaOlusturJSON implements IFaturaOlustur {
+public class FaturaServisiJSON implements IFaturaServisi {
 
     public String faturaOlustur(Fatura fatura){
 

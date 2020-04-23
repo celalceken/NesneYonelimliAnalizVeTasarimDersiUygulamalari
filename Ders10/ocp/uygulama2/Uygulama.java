@@ -46,13 +46,11 @@ public class Uygulama {
         System.out.println("*****************Fatura İşlemleri**************************");
 
         Fatura fatura=new Fatura(siparis);
-        IFaturaOlustur faturaOlusturucu=new FaturaOlusturXML();
-        //IFaturaOlustur faturaOlusturucu=new FaturaOlusturJSON();
-
+        //IFaturaServisi faturaServisi=new FaturaServisiXML();
+        IFaturaServisi faturaServisi=new FaturaServisiJSON();
 
         System.out.println("Fatura toplamı:"+fatura.toplamTutariHesapla());
-        System.out.println("Fatura oluşturuluyor:"+fatura.faturaYazdir(faturaOlusturucu));
-
+        System.out.println("Fatura oluşturuluyor:"+fatura.faturaYazdir(faturaServisi));
     }
 
 }

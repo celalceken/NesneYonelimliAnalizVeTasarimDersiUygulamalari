@@ -25,13 +25,13 @@ public class Fatura {
     public String faturaOlustur(){
 
 
-        //String faturaXML="<XML>"+this.toString();
+        String faturaXML="<XML>"+this.toString();
 
-        JsonObject faturaJSON = Json.createObjectBuilder().add("siparisNo", this.siparis.getSiparisNo())
+       /* JsonObject faturaJSON = Json.createObjectBuilder().add("siparisNo", this.siparis.getSiparisNo())
                 .add("siparisTarihi", this.siparis.getSiparisTarihi().toString())
                 .add("toplam", siparis.getGenelToplam())
                 .build();
-
+*/
         /*JsonObject fatura = Json.createObjectBuilder().add("siparisNo", this.siparis.getSiparisNo())
                 .add("siparisTarihi", this.siparis.getSiparisTarihi())
                 .add("toplam", siparis.getGenelToplam())
@@ -41,12 +41,12 @@ public class Fatura {
                                 .build()
                 )*//*
                 .build();*/
-      return faturaJSON.toString();
-        //return faturaXML;
+      //return faturaJSON.toString();
+        return faturaXML;
 
     }
 
-    public void faturayiSakla(){
+    public void faturaDepola(){
 
         System.out.println("PostgreSQL veritabanına bağlandı");
         System.out.println("faturayı sakla");

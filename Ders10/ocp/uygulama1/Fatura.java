@@ -25,13 +25,13 @@ public class Fatura {
     }
 
     ///*
-    public String faturaYazdir(FaturaOlustur faturaOlustur){
-        return faturaOlustur.faturaOlustur(this);
+    public String faturaYazdir(FaturaServisi faturaServisi){
+        return faturaServisi.faturaOlustur(this);
     }
     //*/
     /*
-    public String faturaYazdir(FaturaOlustur faturaOlustur, byte tur){
-        return faturaOlustur.faturaOlustur(this,tur);
+    public String faturaYazdir(FaturaServisi faturaServisi, byte tur){
+        return faturaServisi.faturaOlustur(this,tur);
     }
     */
 

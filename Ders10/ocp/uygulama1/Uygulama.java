@@ -1,6 +1,5 @@
 package cc.ders10.ocp.uygulama1;
 
-import cc.ders10.srp.uygulama2.FaturaSakla;
 import cc.ders6.siparis.Siparis;
 
 import java.util.Scanner;
@@ -47,10 +46,10 @@ public class Uygulama {
         System.out.println("*****************Fatura İşlemleri**************************");
 
         Fatura fatura=new Fatura(siparis);
-        FaturaOlustur faturaOlusturucu=new FaturaOlustur();
+        FaturaServisi faturaServisi=new FaturaServisi();
 
-        System.out.println("Fatura toplamı:"+fatura.toplamTutariHesapla());
-        System.out.println("Fatura oluşturuluyor:"+fatura.faturaYazdir(faturaOlusturucu));
-        //System.out.println("Fatura oluşturuluyor:"+fatura.faturaYazdir(faturaOlusturucu,(byte)2));
+        System.out.println("Fatura1 toplamı:"+fatura.toplamTutariHesapla());
+        System.out.println("Fatura oluşturuluyor:"+fatura.faturaYazdir(faturaServisi));
+        //System.out.println("Fatura oluşturuluyor:"+fatura.faturaYazdir(faturaServisi,(byte)1));
     }
 }

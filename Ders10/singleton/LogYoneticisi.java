@@ -8,7 +8,7 @@ import java.time.LocalDateTime;
 public class LogYoneticisi {
 
     private static LogYoneticisi instance;
-    PrintWriter out;
+    private PrintWriter out;
 
     private LogYoneticisi(String logDosyasi){
         try {

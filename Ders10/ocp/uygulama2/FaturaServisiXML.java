@@ -1,7 +1,7 @@
 package cc.ders10.ocp.uygulama2;
 
 
-public class FaturaOlusturXML implements IFaturaOlustur {
+public class FaturaServisiXML implements IFaturaServisi {
 
     public String faturaOlustur(Fatura fatura){
 

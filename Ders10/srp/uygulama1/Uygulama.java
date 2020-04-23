@@ -49,6 +49,6 @@ public class Uygulama {
 
         System.out.println("Fatura toplamı:"+fatura.toplamTutariHesapla());
         System.out.println("Fatura oluşturuluyor:"+fatura.faturaOlustur());
-        fatura.faturayiSakla();
+        fatura.faturaDepola();
     }
 }

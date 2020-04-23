@@ -24,8 +24,8 @@ public class Fatura {
         return faturaToplami;
     }
 
-    public String faturaYazdir(IFaturaOlustur faturaOlustur){
-        return faturaOlustur.faturaOlustur(this);
+    public String faturaYazdir(IFaturaServisi faturaServisi){
+        return faturaServisi.faturaOlustur(this);
     }
 
     @Override

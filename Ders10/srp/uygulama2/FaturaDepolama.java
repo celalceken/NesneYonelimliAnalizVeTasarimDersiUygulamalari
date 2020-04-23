@@ -1,8 +1,8 @@
 package cc.ders10.srp.uygulama2;
 
-public class FaturaSakla {
+public class FaturaDepolama {
 
-    public void faturayiSakla(Fatura fatura){
+    public void faturaDepola(Fatura fatura){
 
         System.out.println("PostgreSQL veritabanına bağlandı");
         System.out.println(fatura);
