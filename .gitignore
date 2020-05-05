@@ -1,0 +1,14 @@
+*.class
+References
+.idea
+*.log
+Logs
+*test.*
+*Test.*
+*.info.md
+IntelliJ
+
+pom.xml
+*.iml
+*.html
+Ders7/ATMUygulamasi/Doc
