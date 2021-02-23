@@ -4,6 +4,6 @@
 
 
 Ders tanıtımı için aşağıdaki bağlantıyı inceleyiniz.
-* https://ebs.sabis.sakarya.edu.tr/DersDetay/DersinDetayliBilgileri/255/94457
+* https://ebs.sakarya.edu.tr/Ders/Detay/531805
 
 ### Notlar sürekli güncellenmektedir...
