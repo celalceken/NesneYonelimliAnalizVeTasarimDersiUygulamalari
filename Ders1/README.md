@@ -31,9 +31,17 @@ public class IlkUygulama
 }
 ```
 
+Derleme
 ```console
-Orka:~ nyat$ javac IlkUygulama.java # Derleme
-Orka:~ nyat$ java IlkUygulama       # Çalıştırma
-Merhaba Dünya
+javac IlkUygulama.java
+```
 
+Çalıştırma
+```console
+java IlkUygulama
+```
+
+Program çıktısı
+```console
+Merhaba Dünya
 ```
