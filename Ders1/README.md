@@ -15,8 +15,8 @@ Java programlama dilinin temellerini öğrenmek için kullanabileceğiniz kaynak
 
 * https://docs.oracle.com/javase/tutorial/getStarted/cupojava/index.html
 * Java uygulamaları geliştirebilmek için Java Development Kit (JDK) yazılımını kurmalısınız (aşağıdaki adreslerden birini kullanabilirsiniz).
-* * https://jdk.java.net
-* * https://www.oracle.com/technetwork/java/javase/downloads/jdk13-downloads-5672538.html
+    * https://jdk.java.net
+    * https://www.oracle.com/technetwork/java/javase/downloads/jdk13-downloads-5672538.html
 
 ```java
 /**
