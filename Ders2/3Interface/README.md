@@ -2,7 +2,7 @@
 
 
 ```console
-Orka:~ nyat$ javac -d .  VeritabaniUygulamasi.java VeritabaniIslemleri.java VeritabaniSurucu.java PostgreSQLSurucu.java MySQLSurucu.java 
+Orka:~ nyat$ javac -d . VeritabaniUygulamasi.java VeritabaniIslemleri.java VeritabaniSurucu.java PostgreSQLSurucu.java MySQLSurucu.java 
  
 Orka:~ nyat$ java cc.ders2.arayuz.VeritabaniUygulamasi
 
