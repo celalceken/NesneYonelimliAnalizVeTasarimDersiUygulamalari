@@ -1,6 +1,9 @@
 # Uygulama Geliştirme Ortamının Oluşturulması
   * https://www.youtube.com/watch?v=XpJElFJdQb0
 
+# Bu depoda yer alan uygulamaların IntelliJ IDEA ile çalıştırılması
+ * https://youtu.be/g_0uV6jEKcM
+
 # Java İle Uygulama Geliştirme
 
 Java programlama dilinin temellerini öğrenmek için kullanabileceğiniz kaynaklar:
