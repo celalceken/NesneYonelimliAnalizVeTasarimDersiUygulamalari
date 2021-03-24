@@ -6,6 +6,5 @@ public class ATMUygulamasi {
 
         ATM atm=new ATM();
         atm.basla();
-
     }
 }

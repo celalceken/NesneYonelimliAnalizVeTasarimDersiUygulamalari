@@ -4,9 +4,9 @@ public class Musteri {
     private String ad;
     private String soyad;
 
-    public Musteri(String ad, String soyad) {
-        this.ad = ad;
-        this.soyad = soyad;
+    public Musteri(String adi, String soyadi) {
+        this.ad = adi;
+        this.soyad = soyadi;
     }
 
     public String getSoyad() {
