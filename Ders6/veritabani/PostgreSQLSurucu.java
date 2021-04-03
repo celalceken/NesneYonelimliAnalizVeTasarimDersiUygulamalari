@@ -2,7 +2,7 @@ package cc.ders7.atm.veritabani;
 
 import cc.ders7.atm.Araclar;
 import cc.ders7.atm.IBankaBilgiSistemi;
-import cc.ders7.atm.KullaniciHesabi;
+import cc.ders7.atm.MusteriHesabi;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -11,12 +11,12 @@ import java.sql.Statement;
 
 public class PostgreSQLSurucu implements IBankaBilgiSistemi {
 
-    public KullaniciHesabi kullaniciDogrula(int hesapNumarasi, int sifre) {
-        KullaniciHesabi kullaniciHesabi=null;
+    public MusteriHesabi kullaniciDogrula(int hesapNumarasi, int sifre) {
+        MusteriHesabi musteriHesabi =null;
 
         System.out.println("banka bilgi sistemi kullanıcıyı doğruluyor...");
         Araclar.bekle(2000);
-        System.out.println("veritabanına bağlandı (sanal veritabanı yönetim sistemi) ve kullanıcıyı sorguluyor...");
+        System.out.println("veritabanına bağlandı (postgresql veritabanı yönetim sistemi) ve kullanıcıyı sorguluyor...");
         Araclar.bekle(2000);
 
         //veritabani.baglan(hesapNumarasi, sifre);
@@ -56,7 +56,7 @@ public class PostgreSQLSurucu implements IBankaBilgiSistemi {
                 System.out.println("Adi:" + adi);
                 System.out.println(", Soyadı:" + soyadi);*/
 
-                kullaniciHesabi = new KullaniciHesabi(hesapNo, bakiye, adi, soyadi);
+                musteriHesabi = new MusteriHesabi(hesapNo, bakiye, adi, soyadi);
             }
 
             rs.close();
@@ -65,10 +65,10 @@ public class PostgreSQLSurucu implements IBankaBilgiSistemi {
             e.printStackTrace();
         }
 
-        return kullaniciHesabi;
+        return musteriHesabi;
     }
 
-    public void hesapGuncelle(KullaniciHesabi kullaniciHesabi) {
+    public void hesapGuncelle(MusteriHesabi musteriHesabi) {
 
         try
         {
@@ -80,7 +80,7 @@ public class PostgreSQLSurucu implements IBankaBilgiSistemi {
                 System.out.println("Bağlantı girişimi başarısız!");
 
 
-            String sql= "UPDATE \"KullaniciHesabi\" SET bakiye="+kullaniciHesabi.getBakiye() + "WHERE \"hesapNumarasi\"="+ kullaniciHesabi.getHesapNumarasi();
+            String sql= "UPDATE \"KullaniciHesabi\" SET bakiye="+ musteriHesabi.getBakiye() + "WHERE \"hesapNumarasi\"="+ musteriHesabi.getHesapNumarasi();
 
             Statement stmt = conn.createStatement();
             stmt.executeUpdate(sql);

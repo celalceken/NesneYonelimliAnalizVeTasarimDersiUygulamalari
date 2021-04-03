@@ -1,7 +1,5 @@
 package cc.ders7.atm;
 
-import cc.ders7.atm.veritabani.PostgreSQLSurucu;
-
 
 public class BankaBilgiSistemi implements IBankaBilgiSistemi {
 
@@ -11,15 +9,15 @@ public class BankaBilgiSistemi implements IBankaBilgiSistemi {
         this.veritabani=veritabani;
     }
 
-    public KullaniciHesabi kullaniciDogrula(int hesapNumarasi, int sifre) {
+    public MusteriHesabi kullaniciDogrula(int hesapNumarasi, int sifre) {
 
         return veritabani.kullaniciDogrula(hesapNumarasi, sifre);
 
     }
 
-    public void hesapGuncelle(KullaniciHesabi kullaniciHesabi) {
+    public void hesapGuncelle(MusteriHesabi musteriHesabi) {
 
-        veritabani.hesapGuncelle(kullaniciHesabi);
+        veritabani.hesapGuncelle(musteriHesabi);
 
     }
 }

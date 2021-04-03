@@ -1,7 +1,6 @@
 package cc.ders7.atm;
 
 import cc.ders7.atm.veritabani.PostgreSQLSurucu;
-import cc.ders7.atm.veritabani.SanalVeritabaniSurucu;
 
 /**  ATM sınıfı işlemlerin başlatıldığı modüldür.
  *
@@ -34,12 +33,12 @@ public class ATM
 		if(hesapNumarasi!=0){
 			ekran.mesajGoruntule("şifreniz");
 			int sifre= tusTakimi.veriAl();
-			//IBankaBilgiSistemi bankaBilgiSistemi=new BankaBilgiSistemi(new PostgreSQLSurucu());
-			IBankaBilgiSistemi bankaBilgiSistemi=new BankaBilgiSistemi(new SanalVeritabaniSurucu());
-			KullaniciHesabi kullaniciHesabi= this.kullaniciDogrulama(hesapNumarasi, sifre, bankaBilgiSistemi);
-			if (kullaniciHesabi!=null){
-				ekran.mesajGoruntule("Kullanıcı doğrulama işlemi başarılı...:"+kullaniciHesabi);
-				islemSecimi(bankaBilgiSistemi, kullaniciHesabi);
+			IBankaBilgiSistemi bankaBilgiSistemi=new BankaBilgiSistemi(new PostgreSQLSurucu());
+			//IBankaBilgiSistemi bankaBilgiSistemi=new BankaBilgiSistemi(new SanalVeritabaniSurucu());
+			MusteriHesabi musteriHesabi = this.kullaniciDogrulama(hesapNumarasi, sifre, bankaBilgiSistemi);
+			if (musteriHesabi != null){
+				ekran.mesajGoruntule("Kullanıcı doğrulama işlemi başarılı...:"+ musteriHesabi);
+				islemSecimi(bankaBilgiSistemi, musteriHesabi);
 			} else{
 				ekran.mesajGoruntule("hesabınız doğrulanamadı");
 				kartBolmesi.kartCikart();
@@ -54,27 +53,27 @@ public class ATM
 		return kartBolmesi.kartAl();
 	}
 
-	private KullaniciHesabi kullaniciDogrulama(int hesapNumarasi, int sifre, IBankaBilgiSistemi bankaBilgiSistemi){
+	private MusteriHesabi kullaniciDogrulama(int hesapNumarasi, int sifre, IBankaBilgiSistemi bankaBilgiSistemi){
 		return bankaBilgiSistemi.kullaniciDogrula(hesapNumarasi,sifre);
 	}
 
-	private void islemSecimi(IBankaBilgiSistemi bankaBilgiSistemi, KullaniciHesabi kullaniciHesabi){
+	private void islemSecimi(IBankaBilgiSistemi bankaBilgiSistemi, MusteriHesabi musteriHesabi){
 		int secim;
 		 do{
 		 	secim=anaMenuyuGoster();
 		 	ekran.ekranTemizle();
 			switch (secim) {
 				case BAKIYE_GORUNTULE:
-					IIslem bakiyeGoruntuleme=new BakiyeGoruntuleme(ekran, tusTakimi, kullaniciHesabi);
+					IIslem bakiyeGoruntuleme=new BakiyeGoruntuleme(ekran, tusTakimi, musteriHesabi);
 					bakiyeGoruntuleme.islemYap();
 					break;
 				case PARA_CEKME:
-					IIslem paraCekme=new ParaCekme(bankaBilgiSistemi, ekran, tusTakimi, kullaniciHesabi, paraBolmesi);
+					IIslem paraCekme=new ParaCekme(bankaBilgiSistemi, ekran, tusTakimi, musteriHesabi, paraBolmesi);
 					paraCekme.islemYap();
 					break;
 
 				case PARA_YATIRMA:
-					IIslem paraYatirma=new ParaYatirma(bankaBilgiSistemi, ekran, tusTakimi, kullaniciHesabi, paraBolmesi);
+					IIslem paraYatirma=new ParaYatirma(bankaBilgiSistemi, ekran, tusTakimi, musteriHesabi, paraBolmesi);
 					paraYatirma.islemYap();
 					break;
 

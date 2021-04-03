@@ -2,24 +2,24 @@ package cc.ders7.atm.veritabani;
 
 import cc.ders7.atm.Araclar;
 import cc.ders7.atm.IBankaBilgiSistemi;
-import cc.ders7.atm.KullaniciHesabi;
+import cc.ders7.atm.MusteriHesabi;
 
 public class SanalVeritabaniSurucu implements IBankaBilgiSistemi {
     @Override
-    public KullaniciHesabi kullaniciDogrula(int hesapNumarasi, int sifre) {
-        KullaniciHesabi kullaniciHesabi=null;
+    public MusteriHesabi kullaniciDogrula(int hesapNumarasi, int sifre) {
+        MusteriHesabi musteriHesabi =null;
 
         System.out.println("banka bilgi sistemi  kullanıcıyı doğruluyor...");
         Araclar.bekle(2000);
         System.out.println("veritabanına bağlandı (sanal veritabanı yönetim sistemi) ve kullanıcıyı sorguluyor...");
         Araclar.bekle(2000);
         if(hesapNumarasi==2 && sifre==2)
-            kullaniciHesabi = new KullaniciHesabi(hesapNumarasi, 1000, "Zeynep", "Gök");
-        return kullaniciHesabi;
+            musteriHesabi = new MusteriHesabi(hesapNumarasi, 1000, "Zeynep", "Gök");
+        return musteriHesabi;
     }
 
     @Override
-    public void hesapGuncelle(KullaniciHesabi kullaniciHesabi) {
+    public void hesapGuncelle(MusteriHesabi musteriHesabi) {
 
     }
 }
