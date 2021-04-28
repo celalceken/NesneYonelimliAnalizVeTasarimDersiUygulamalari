@@ -47,8 +47,6 @@ public class UrunRepositoryPostgreSQL {
             int birimFiyati;
             int stokMiktari;
 
-            String soyadi;
-
             while(rs.next())
             {
                 urunNo  = rs.getInt("urunNo");
@@ -89,8 +87,6 @@ public class UrunRepositoryPostgreSQL {
             String adi;
             int birimFiyati;
             int stokMiktari;
-
-            String soyadi;
 
             while(rs.next())
             {
