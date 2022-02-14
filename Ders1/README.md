@@ -1,19 +1,6 @@
 # Uygulama Geliştirme Ortamının Oluşturulması
   * https://www.youtube.com/watch?v=XpJElFJdQb0
 
-# Bu depoda yer alan uygulamaların IntelliJ IDEA ile çalıştırılması
- * https://youtu.be/g_0uV6jEKcM
-
-# Java İle Uygulama Geliştirme
-
-Java programlama dilinin temellerini öğrenmek için kullanabileceğiniz kaynaklar:
-* http://www.w3schools.com/java/ 
-* https://docs.oracle.com/javase/tutorial/index.html
-
-## Java Teknolojisi
-
-* https://docs.oracle.com/javase/tutorial/getStarted/intro/definition.html
-
 ## İlk Uygulama
 
 * https://docs.oracle.com/javase/tutorial/getStarted/cupojava/index.html
@@ -48,3 +35,15 @@ Program çıktısı
 ```console
 Merhaba Dünya
 ```
+# Bu depoda yer alan uygulamaların IntelliJ IDEA ile çalıştırılması
+ * https://youtu.be/g_0uV6jEKcM
+
+# Java İle Uygulama Geliştirme
+
+Java programlama dilinin temellerini öğrenmek için kullanabileceğiniz kaynaklar:
+* http://www.w3schools.com/java/ 
+* https://docs.oracle.com/javase/tutorial/index.html
+
+## Java Teknolojisi
+
+* https://docs.oracle.com/javase/tutorial/getStarted/intro/definition.html
