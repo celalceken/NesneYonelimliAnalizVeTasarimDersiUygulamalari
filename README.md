@@ -1,9 +1,10 @@
 
 
-# BSM204 Nesne Yönelimli Analiz Ve Tasarım dersi uygulamaları
+# BSM204 Nesne Yönelimli Analiz Ve Tasarım dersinde kullanılan uygulamaları içermektedir.
+Ders Notları SABİS üzerinden haftalık olarak gönderilecektir.
 
 
 Ders tanıtımı için aşağıdaki bağlantıyı inceleyiniz.
-* https://ebs.sakarya.edu.tr/Ders/Detay/531805
+* https://ebs.sakarya.edu.tr/Ders/Detay/552091
 
 ### Notlar sürekli güncellenmektedir...
