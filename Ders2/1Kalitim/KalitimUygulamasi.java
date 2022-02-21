@@ -1,6 +1,6 @@
 /*
 * Benzer varlıklar arasında olmalıdır. “is a” , “is kind of”
-* Türetilmiş sınıf (Derived class) Temel Sınıfın (base class)  üyelerini kalıtım yoluyla sahip olur.
+* Türetilmiş sınıf (Derived class) Temel Sınıfın (base class)  üyelerine kalıtım yoluyla sahip olur.
 * Kod tekrar kullanımı sağlanır
 *
 */
