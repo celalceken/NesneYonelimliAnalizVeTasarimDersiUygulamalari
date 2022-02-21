@@ -1,3 +1,12 @@
+# Interface (Arayüz)
+>  - Bir sınıfın yapmasını istediklerimizi belirtmek için kullanırız ("is capable of")
+>  - Ne yapması gerektiği belirtilir, nasıl ile ilgilenilmez.
+>  - Arayüzler sayesinde:
+>    - istemci kod, gerçekleme kısmındaki değişikliklerden etkilenmez
+>    - gerçeklemeler henüz ortada yokken istemci kod içerisinde kullanılabilir (Yeni özellik eklendiğinde istemci kod değiştirilmez)
+>    - gereçekleme ve istemci modüller aynı anda farklı kodlayıcılar tarafından
+oluşturulabilir (takım çalışması)
+
 * Uygulamayı çalıştırmak için
 
 
