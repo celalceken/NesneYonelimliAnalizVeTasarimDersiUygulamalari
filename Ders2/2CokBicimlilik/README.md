@@ -1,3 +1,12 @@
+> - Bir modülün duruma göre farklı biçimlerde davranabilmesi özelliğidir.
+> 
+> - Kalıtımla yakından ilgilidir. Temel sınıfın kullanıldığı yerlerde alt sınıflarında kullanılabilmesini ifade eder.
+> 
+> - Yöntemlerin aşırı yüklenmesi de çok biçimlilik (statik) örneğidir.
+> 
+> - Aynı istemci kodun farklı modüller için kullanılabilmesini sağlar. 
+
+
 * Uygulamayı çalıştırmak için
 
 ```console
