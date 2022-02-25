@@ -3,8 +3,8 @@ package cc.ders2.arayuz;
 public class VeritabaniUygulamasi{
 
     public static void main(String args[]){
-        //IVeritabaniSurucu veritabaniSurucu= new PostgreSQLSurucu();
-        IVeritabaniSurucu veritabaniSurucu= new MySQLSurucu();
+        IVeritabaniSurucu veritabaniSurucu= new PostgreSQLSurucu();
+        //IVeritabaniSurucu veritabaniSurucu= new MySQLSurucu();
 
         // Dependency injection: nesne dışarıda oluşturulup istemci koda gönderiliyor
         VeritabaniIslemleriRepository veritabaniIslemleri = new VeritabaniIslemleriRepository(veritabaniSurucu);
