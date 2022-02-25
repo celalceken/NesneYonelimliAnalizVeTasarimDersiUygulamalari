@@ -1,8 +1,9 @@
 # Çok biçimlilik (Polymorphism)
-> - Bir modülün duruma göre farklı biçimlerde davranabilmesi özelliğidir.
-> - Kalıtımla yakından ilgilidir. Temel sınıfın kullanıldığı yerlerde alt sınıflarında kullanılabilmesini ifade eder.
-> - Yöntemlerin aşırı yüklenmesi de çok biçimlilik (statik) örneğidir.
-> - Aynı istemci kodun farklı modüller için kullanılabilmesini sağlar. 
+- Bir modülün duruma göre farklı biçimlerde davranabilmesi özelliğidir.
+- Kalıtımla yakından ilgilidir. Temel sınıfın kullanıldığı yerlerde alt sınıfların da kullanılabilmesini ifade eder.
+- Yöntemlerin aşırı yüklenmesi (overloading) de çok biçimlilik (statik) olarak kabul edilebilir.
+- Yöntemlerin geçersiz kılınması (overriding) dinamik çok biçimlilik örneğidir.
+- Aynı istemci kodun farklı modüller için kullanılabilmesini sağlar (kod tekrar kullanımı-code reuse). 
 
 
 * Uygulamayı çalıştırmak için

@@ -2,10 +2,12 @@
 >  - Bir sınıfın yapmasını istediklerimizi belirtmek için kullanırız ("is capable of")
 >  - Ne yapması gerektiği belirtilir, nasıl ile ilgilenilmez.
 >  - Arayüzler sayesinde:
->    - istemci kod, gerçekleme kısmındaki değişikliklerden etkilenmez
->    - gerçeklemeler henüz ortada yokken istemci kod içerisinde kullanılabilir (Yeni özellik eklendiğinde istemci kod değiştirilmez)
->    - gereçekleme ve istemci modüller aynı anda farklı kodlayıcılar tarafından
-oluşturulabilir (takım çalışması)
+> - gerçeklemeler(sınıflar) henüz ortada yok iken istemci kod içerisinde kullanılabilir 
+       > gereçekleme ve istemci modüller aynı anda farklı kodlayıcılar tarafından oluşturulabilir (takım çalışması)
+> - yeni özellik eklendiğinde istemci kod değiştirilmez (sözleşme yapılır)
+> - istemci kod, gerçekleme kısmındaki değişikliklerden etkilenmez (bağımlılığın zayıflatılması)
+> - aynı istemci kod farklı modüller tarafından defalarca kullanılabilir (kod tekrar kullanımı-code reuse)
+
 
 * Uygulamayı çalıştırmak için
 
