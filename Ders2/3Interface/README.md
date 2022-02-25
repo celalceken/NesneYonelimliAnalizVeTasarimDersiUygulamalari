@@ -3,7 +3,7 @@
 >  - Ne yapması gerektiği belirtilir, nasıl ile ilgilenilmez.
 >  - Arayüzler sayesinde:
 > - gerçeklemeler(sınıflar) henüz ortada yok iken istemci kod içerisinde kullanılabilir 
-       > gereçekleme ve istemci modüller aynı anda farklı kodlayıcılar tarafından oluşturulabilir (takım çalışması)
+>> - gereçekleme ve istemci modüller aynı anda farklı kodlayıcılar tarafından oluşturulabilir (takım çalışması)
 > - yeni özellik eklendiğinde istemci kod değiştirilmez (sözleşme yapılır)
 > - istemci kod, gerçekleme kısmındaki değişikliklerden etkilenmez (bağımlılığın zayıflatılması)
 > - aynı istemci kod farklı modüller tarafından defalarca kullanılabilir (kod tekrar kullanımı-code reuse)
