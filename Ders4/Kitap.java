@@ -1,6 +1,4 @@
-package cc.ders4.listarray;
-
-import java.util.ArrayList;
+package cc.ders4.veritopluluklari;
 
 public class Kitap {
     private String adi;
