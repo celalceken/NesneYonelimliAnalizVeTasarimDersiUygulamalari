@@ -48,5 +48,9 @@ public class Uygulama {
 
         for(Musteri musteri:musteriListesi)
             System.out.println(musteri.getAd()+" "+musteri.getSoyad()+" "+ musteri.getEvAdresi().toString()+" "+musteri.getIsAdresi());
+
+        System.out.println(musteriListesi);
+
+        musteriListesi.forEach(item->System.out.println(item.getEvAdresi().getIl()));
     }
 }

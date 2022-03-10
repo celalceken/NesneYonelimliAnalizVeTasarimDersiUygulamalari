@@ -10,6 +10,22 @@ public class Adres {
         this.il = il;
     }
 
+    public String getAdresSatiri() {
+        return adresSatiri;
+    }
+
+    public void setAdresSatiri(String adresSatiri) {
+        this.adresSatiri = adresSatiri;
+    }
+
+    public String getIl() {
+        return il;
+    }
+
+    public void setIl(String il) {
+        this.il = il;
+    }
+
     @Override
     public String toString() {
         return "Adres{" +

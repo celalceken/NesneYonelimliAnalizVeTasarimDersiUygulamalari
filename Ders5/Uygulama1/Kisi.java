@@ -35,4 +35,12 @@ public abstract class Kisi {
     public void setEvAdresi(Adres evAdresi) { this.evAdresi = evAdresi;
     }
 
+    @Override
+    public String toString() {
+        return "Kisi{" +
+                "ad='" + ad + '\'' +
+                ", soyad='" + soyad + '\'' +
+                ", evAdresi=" + evAdresi +
+                '}';
+    }
 }

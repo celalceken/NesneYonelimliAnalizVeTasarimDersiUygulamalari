@@ -18,4 +18,12 @@ public class Musteri extends Kisi{
     public Adres getIsAdresi() {
         return isAdresi;
     }
+
+    @Override
+    public String toString() {
+        return "Musteri{" +super.toString()+
+                "telefonNo='" + telefonNo + '\'' +
+                ", isAdresi=" + isAdresi +
+                "} ";
+    }
 }
