@@ -14,7 +14,7 @@
 * */
 package cc.ders2.arayuz;
 
-public  class VeritabaniIslemleriRepository implements IVeritabaniSurucu {
+public  class VeritabaniIslemleriRepository  {
 
     private IVeritabaniSurucu veritabaniSurucu;
     //private PostgreSQLSurucu veritabani; // her farklı vt sürücü için burayı değiştirmek gerekir
@@ -28,41 +28,36 @@ public  class VeritabaniIslemleriRepository implements IVeritabaniSurucu {
    /* public VeritabaniIslemleriRepository(PostgreSQLSurucu veritabani) {
         this.veritabani = veritabani;
     }*/
-
-    public void baglan(){
-        veritabaniSurucu.baglan();
-    }
-
-    @Override
-    public void sorguCalistir() {
-
-    }
-
     public void ekle(){
+        veritabaniSurucu.baglan();
         System.out.println("Ekleme işlemi yapılıyor....");
         veritabaniSurucu.sorguCalistir();
-    }
-
-    public void idAra(int id){
-        System.out.println(id+ "nolu kayıt için arama işlemi yapılıyor....");
-        veritabaniSurucu.sorguCalistir();
-    }
-    public void listele(){
-        System.out.println("Listeleme işlemi yapılıyor....");
-        veritabaniSurucu.sorguCalistir();
-    }
-    public void sil(){
-        System.out.println("Silme işlemi yapılıyor....");
-        veritabaniSurucu.sorguCalistir();
-    }
-
-    public void güncelle(){
-        System.out.println("Güncelleme işlemi yapılıyor....");
-        veritabaniSurucu.sorguCalistir();
-    }
-
-    public void baglantiSonlandir(){
         veritabaniSurucu.baglantiSonlandir();
     }
 
+    public void idAra(int id){
+        veritabaniSurucu.baglan();
+        System.out.println(id+ "nolu kayıt için arama işlemi yapılıyor....");
+        veritabaniSurucu.sorguCalistir();
+        veritabaniSurucu.baglantiSonlandir();
+    }
+    public void listele(){
+        veritabaniSurucu.baglan();
+        System.out.println("Listeleme işlemi yapılıyor....");
+        veritabaniSurucu.sorguCalistir();
+        veritabaniSurucu.baglantiSonlandir();
+    }
+    public void sil(){
+        veritabaniSurucu.baglan();
+        System.out.println("Silme işlemi yapılıyor....");
+        veritabaniSurucu.sorguCalistir();
+        veritabaniSurucu.baglantiSonlandir();
+    }
+
+    public void güncelle(){
+        veritabaniSurucu.baglan();
+        System.out.println("Güncelleme işlemi yapılıyor....");
+        veritabaniSurucu.sorguCalistir();
+        veritabaniSurucu.baglantiSonlandir();
+    }
 }
