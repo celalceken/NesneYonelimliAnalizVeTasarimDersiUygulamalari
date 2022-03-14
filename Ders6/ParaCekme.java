@@ -1,17 +1,11 @@
 package cc.ders7.atm;
 
-public class ParaCekme implements IIslem{
-    private IBankaBilgiSistemi bankaBilgiSistemi;
-    private IEkran ekran;
-    private ITusTakimi tusTakimi;
-    private MusteriHesabi musteriHesabi;
-    private IParaBolmesi paraBolmesi;
+public class ParaCekme extends Islem{
+
+    private final IParaBolmesi paraBolmesi;
 
     public ParaCekme(IBankaBilgiSistemi bankaBilgiSistemi, IEkran ekran, ITusTakimi tusTakimi, MusteriHesabi musteriHesabi, IParaBolmesi paraBolmesi) {
-        this.bankaBilgiSistemi = bankaBilgiSistemi;
-        this.ekran = ekran;
-        this.tusTakimi = tusTakimi;
-        this.musteriHesabi = musteriHesabi;
+        super(ekran, tusTakimi, bankaBilgiSistemi, musteriHesabi);
         this.paraBolmesi = paraBolmesi;
     }
 

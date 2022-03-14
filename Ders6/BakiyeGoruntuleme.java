@@ -1,21 +1,13 @@
 package cc.ders7.atm;
 
-public class BakiyeGoruntuleme implements IIslem {
-    private IEkran ekran;
-    private ITusTakimi tusTakimi;
-    private MusteriHesabi musteriHesabi;
+public class BakiyeGoruntuleme extends Islem {
 
     public BakiyeGoruntuleme(IEkran ekran, ITusTakimi tusTakimi, MusteriHesabi musteriHesabi) {
-
-        this.ekran = ekran;
-        this.tusTakimi = tusTakimi;
-        this.musteriHesabi = musteriHesabi;
-
+        super(ekran, tusTakimi, null, musteriHesabi);
     }
 
-
     public void islemYap() {
-        ekran.mesajGoruntule("para çekme işlemini seçtiniz");
+        ekran.mesajGoruntule("Bakiye görüntüleme işlemini seçtiniz");
         ekran.mesajGoruntule("Bakiyeniz:"+ musteriHesabi.getBakiye());
 
     }

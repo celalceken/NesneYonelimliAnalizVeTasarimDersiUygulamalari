@@ -11,6 +11,23 @@ import java.sql.Statement;
 
 public class PostgreSQLSurucu implements IBankaBilgiSistemi {
 
+    private Connection baglan(){
+
+        Connection conn=null;
+
+        try {
+            conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/ATM",
+                    "postgres", "LecturePassword");
+
+            System.out.println("Veritabanına bağlandı!");
+
+        } catch (Exception e) {
+            System.out.println("Bağlantı girişimi başarısız!");
+            e.printStackTrace();
+        }
+        return conn;
+    }
+
     public MusteriHesabi kullaniciDogrula(int hesapNumarasi, int sifre) {
         MusteriHesabi musteriHesabi =null;
 
@@ -19,17 +36,10 @@ public class PostgreSQLSurucu implements IBankaBilgiSistemi {
         System.out.println("veritabanına bağlandı (postgresql veritabanı yönetim sistemi) ve kullanıcıyı sorguluyor...");
         Araclar.bekle(2000);
 
-        //veritabani.baglan(hesapNumarasi, sifre);
+        Connection conn=this.baglan();
 
         try
         {
-            Connection conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/ATM",
-                    "LectureUser", "LecturePassword");
-            if (conn != null)
-                System.out.println("Veritabanına bağlandı!");
-            else
-                System.out.println("Bağlantı girişimi başarısız!");
-
 
             String sql= "SELECT *  FROM \"MusteriHesabi\" WHERE \"hesapNumarasi\"="+ hesapNumarasi+" AND sifre="+ sifre;
 
@@ -51,12 +61,8 @@ public class PostgreSQLSurucu implements IBankaBilgiSistemi {
                 adi = rs.getString("adi");
                 soyadi = rs.getString("soyadi");
 
-                /*System.out.print("Hesap No:"+ hesapNo);
-                System.out.print(", Bakiye:" + bakiye);
-                System.out.println("Adi:" + adi);
-                System.out.println(", Soyadı:" + soyadi);*/
-
                 musteriHesabi = new MusteriHesabi(hesapNo, bakiye, adi, soyadi);
+                System.out.println(musteriHesabi);
             }
 
             rs.close();
@@ -70,15 +76,10 @@ public class PostgreSQLSurucu implements IBankaBilgiSistemi {
 
     public void hesapGuncelle(MusteriHesabi musteriHesabi) {
 
+        Connection conn=this.baglan();
+
         try
         {
-            Connection conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/ATM",
-                    "postgres", "LecturePassword");
-            if (conn != null)
-                System.out.println("Veritabanına bağlandı!");
-            else
-                System.out.println("Bağlantı girişimi başarısız!");
-
 
             String sql= "UPDATE \"KullaniciHesabi\" SET bakiye="+ musteriHesabi.getBakiye() + "WHERE \"hesapNumarasi\"="+ musteriHesabi.getHesapNumarasi();
 

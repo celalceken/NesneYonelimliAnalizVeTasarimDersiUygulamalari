@@ -20,6 +20,6 @@ public class SanalVeritabaniSurucu implements IBankaBilgiSistemi {
 
     @Override
     public void hesapGuncelle(MusteriHesabi musteriHesabi) {
-
+        System.out.println("banka bilgi sistemi hesabı güncelledi...");
     }
 }

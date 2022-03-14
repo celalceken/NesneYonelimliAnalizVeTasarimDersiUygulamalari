@@ -1,18 +1,18 @@
-package cc.ders7.atm;
-
-import cc.ders7.atm.veritabani.PostgreSQLSurucu;
-
 /**  ATM sınıfı işlemlerin başlatıldığı modüldür.
  *
  * @ author	Celal Çeken
  */
+package cc.ders7.atm;
+
+import cc.ders7.atm.veritabani.PostgreSQLSurucu;
+import cc.ders7.atm.veritabani.SanalVeritabaniSurucu;
 
 public class ATM
 {
-	private IEkran ekran;
-	private ITusTakimi tusTakimi;
-	private IParaBolmesi paraBolmesi;
-	private IKartBolmesi kartBolmesi;
+	private final IEkran ekran;
+	private final ITusTakimi tusTakimi;
+	private final IParaBolmesi paraBolmesi;
+	private final IKartBolmesi kartBolmesi;
 
 	private static final int BAKIYE_GORUNTULE = 1;
 	private static final int PARA_CEKME = 2;
@@ -33,9 +33,10 @@ public class ATM
 		if(hesapNumarasi!=0){
 			ekran.mesajGoruntule("şifreniz");
 			int sifre= tusTakimi.veriAl();
-			IBankaBilgiSistemi bankaBilgiSistemi=new BankaBilgiSistemi(new PostgreSQLSurucu());
-			//IBankaBilgiSistemi bankaBilgiSistemi=new BankaBilgiSistemi(new SanalVeritabaniSurucu());
-			MusteriHesabi musteriHesabi = this.kullaniciDogrulama(hesapNumarasi, sifre, bankaBilgiSistemi);
+			//IBankaBilgiSistemi bankaBilgiSistemi=new BankaBilgiSistemi(new PostgreSQLSurucu());
+			IBankaBilgiSistemi bankaBilgiSistemi=new BankaBilgiSistemi(new SanalVeritabaniSurucu());
+			MusteriHesabi musteriHesabi = this.kullaniciDogrula(hesapNumarasi, sifre, bankaBilgiSistemi);
+			//MusteriHesabi musteriHesabi = bankaBilgiSistemi.kullaniciDogrula(hesapNumarasi, sifre);
 			if (musteriHesabi != null){
 				ekran.mesajGoruntule("Kullanıcı doğrulama işlemi başarılı...:"+ musteriHesabi);
 				islemSecimi(bankaBilgiSistemi, musteriHesabi);
@@ -53,10 +54,11 @@ public class ATM
 		return kartBolmesi.kartAl();
 	}
 
-	private MusteriHesabi kullaniciDogrulama(int hesapNumarasi, int sifre, IBankaBilgiSistemi bankaBilgiSistemi){
+	private MusteriHesabi kullaniciDogrula(int hesapNumarasi, int sifre, IBankaBilgiSistemi bankaBilgiSistemi){
+		// doğrulanamama durumunda tekrar şifre girilmesi, 3 kez hatalı  ise kartın yutulması
+		// işlemleri burada ele alınmalı
 		return bankaBilgiSistemi.kullaniciDogrula(hesapNumarasi,sifre);
 	}
-
 	private void islemSecimi(IBankaBilgiSistemi bankaBilgiSistemi, MusteriHesabi musteriHesabi){
 		int secim;
 		 do{
@@ -64,21 +66,22 @@ public class ATM
 		 	ekran.ekranTemizle();
 			switch (secim) {
 				case BAKIYE_GORUNTULE:
-					IIslem bakiyeGoruntuleme=new BakiyeGoruntuleme(ekran, tusTakimi, musteriHesabi);
+					Islem bakiyeGoruntuleme=new BakiyeGoruntuleme(ekran, tusTakimi, musteriHesabi);
 					bakiyeGoruntuleme.islemYap();
 					break;
 				case PARA_CEKME:
-					IIslem paraCekme=new ParaCekme(bankaBilgiSistemi, ekran, tusTakimi, musteriHesabi, paraBolmesi);
+					Islem paraCekme=new ParaCekme(bankaBilgiSistemi, ekran, tusTakimi, musteriHesabi, paraBolmesi);
 					paraCekme.islemYap();
 					break;
 
 				case PARA_YATIRMA:
-					IIslem paraYatirma=new ParaYatirma(bankaBilgiSistemi, ekran, tusTakimi, musteriHesabi, paraBolmesi);
+					Islem paraYatirma=new ParaYatirma(bankaBilgiSistemi, ekran, tusTakimi, musteriHesabi, paraBolmesi);
 					paraYatirma.islemYap();
 					break;
 
 				case CIKIS:
 					ekran.mesajGoruntule("Çıkılıyor");
+					kartBolmesi.kartCikart();
 					break;
 				default:
 					ekran.mesajGoruntule("1-4 arasında bir sayı girmelisiniz");
