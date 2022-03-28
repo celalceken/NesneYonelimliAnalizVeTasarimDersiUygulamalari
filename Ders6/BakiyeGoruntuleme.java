@@ -8,6 +8,7 @@ public class BakiyeGoruntuleme extends Islem {
 
     public void islemYap() {
         ekran.mesajGoruntule("Bakiye görüntüleme işlemini seçtiniz");
+        ekran.mesajGoruntule(musteriHesabi.getMusteri().getAd()+" "+musteriHesabi.getMusteri().getSoyad());
         ekran.mesajGoruntule("Bakiyeniz:"+ musteriHesabi.getBakiye());
 
     }

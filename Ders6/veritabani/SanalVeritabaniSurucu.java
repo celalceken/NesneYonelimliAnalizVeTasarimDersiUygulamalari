@@ -1,10 +1,10 @@
 package cc.ders7.atm.veritabani;
 
 import cc.ders7.atm.Araclar;
-import cc.ders7.atm.IBankaBilgiSistemi;
+import cc.ders7.atm.IVeritabaniRepository;
 import cc.ders7.atm.MusteriHesabi;
 
-public class SanalVeritabaniSurucu implements IBankaBilgiSistemi {
+public class SanalVeritabaniSurucu implements IVeritabaniRepository {
     @Override
     public MusteriHesabi kullaniciDogrula(int hesapNumarasi, int sifre) {
         MusteriHesabi musteriHesabi =null;

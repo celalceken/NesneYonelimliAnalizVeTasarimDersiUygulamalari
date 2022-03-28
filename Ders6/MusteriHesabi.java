@@ -34,8 +34,8 @@ public class MusteriHesabi
 
 	@Override
 	public String toString() {
-		return "KullaniciHesabi{" + "adi:"+ musteri.getAd()+"soyadi:"+musteri.getSoyad()+
-				"bakiye=" + bakiye +
-				'}';
+		return "{ hesapBilgileri : {" + "adi:"+ musteri.getAd()+", soyadi:"+musteri.getSoyad()+
+				", bakiye=" + bakiye +
+				"} }";
 	}
 }

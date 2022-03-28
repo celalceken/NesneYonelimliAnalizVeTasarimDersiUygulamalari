@@ -3,9 +3,9 @@ package cc.ders7.atm;
 
 public class BankaBilgiSistemi implements IBankaBilgiSistemi {
 
-    private IBankaBilgiSistemi veritabani;
+    private IVeritabaniRepository veritabani;
 
-    public BankaBilgiSistemi(IBankaBilgiSistemi veritabani) {
+    public BankaBilgiSistemi(IVeritabaniRepository veritabani) {
         this.veritabani=veritabani;
     }
 

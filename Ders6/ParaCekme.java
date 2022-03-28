@@ -8,7 +8,7 @@ public class ParaCekme extends Islem{
         super(ekran, tusTakimi, bankaBilgiSistemi, musteriHesabi);
         this.paraBolmesi = paraBolmesi;
     }
-
+    @Override
     public void islemYap() {
         ekran.mesajGoruntule("para çekme işlemini seçtiniz");
         ekran.mesajGoruntule("Bakiyeniz:"+ musteriHesabi.getBakiye());

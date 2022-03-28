@@ -1,7 +1,7 @@
 package cc.ders7.atm.veritabani;
 
 import cc.ders7.atm.Araclar;
-import cc.ders7.atm.IBankaBilgiSistemi;
+import cc.ders7.atm.IVeritabaniRepository;
 import cc.ders7.atm.MusteriHesabi;
 
 import java.sql.Connection;
@@ -9,7 +9,7 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
-public class PostgreSQLSurucu implements IBankaBilgiSistemi {
+public class PostgreSQLSurucu implements IVeritabaniRepository {
 
     private Connection baglan(){
 
