@@ -1,6 +1,6 @@
 package cc.ders9.nesnelerindepolanmasi.siparis;
 
-public interface ISiparisVeritabaniServisi {
+public interface ISiparisRepository {
 
     public void siparisiKaydet(Siparis siparis);
 

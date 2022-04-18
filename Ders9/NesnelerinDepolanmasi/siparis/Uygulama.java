@@ -1,9 +1,19 @@
 package cc.ders9.nesnelerindepolanmasi.siparis;
 
+import cc.ders9.nesnelerindepolanmasi.repository.IUrunRepository;
+import cc.ders9.nesnelerindepolanmasi.repository.Urun;
+import cc.ders9.nesnelerindepolanmasi.repository.UrunRepositoryImplPostgreSQL;
+import cc.ders9.nesnelerindepolanmasi.repository.UrunService;
+
 import java.util.List;
 import java.util.Scanner;
 
 public class Uygulama {
+
+    private static IUrunRepository urunRepository= new UrunRepositoryImplPostgreSQL();
+    private static UrunService urunService= new UrunService(urunRepository);
+    private static ISiparisRepository siparisRepository= new SiparisRepositoryImplPostgreSQL();
+    private static SiparisService siparisService= new SiparisService(siparisRepository);
 
     public static void main(String args[]){
 
@@ -18,19 +28,18 @@ public class Uygulama {
         Urun urun=null;
         double siparisBirimFiyati=0;
         int miktari=0;
-        List<Urun> urunlerinListesi;
+        List<Urun> tumUrunlerinListesi;
 
         do{
-            IUrunVeritabaniServisi urunler=new UrunPostgreSQLSurucu();
-            urunlerinListesi= urunler.urunListele();
-            System.out.println(urunlerinListesi);
+            tumUrunlerinListesi= urunService.tumUrunler();
+            System.out.println(tumUrunlerinListesi);
 
             System.out.println("Eklemek istediğiniz ürünün adını giriniz:");
             String urunAdi=giris.nextLine();
 
             // Liste içerisinden ürün adına göre arama yapıyor ve urun nesnesini döndürüyor
-            urun = urunlerinListesi.stream()
-                    .filter(urunElementi -> urunAdi.equalsIgnoreCase(urunElementi.getAd()))
+            urun = tumUrunlerinListesi.stream()
+                    .filter(urunElementi -> urunAdi.equalsIgnoreCase(urunElementi.getAdi()))
                     .findAny()
                     .orElse(null);
 
@@ -52,7 +61,6 @@ public class Uygulama {
 
         System.out.println("Sipariş bilgileriniz:"+siparis);
 
-        ISiparisVeritabaniServisi siparisVTIslemleri=new SiparisPostgreSQLSurucu();
-        siparisVTIslemleri.siparisiKaydet(siparis);
+        siparisService.siparisiKaydet(siparis);
     }
 }

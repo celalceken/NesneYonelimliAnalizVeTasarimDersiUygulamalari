@@ -1,5 +1,7 @@
 package cc.ders9.nesnelerindepolanmasi.siparis;
 
+import cc.ders9.nesnelerindepolanmasi.repository.Urun;
+
 public class SiparisKalemi {
     private Urun urun;
     private int miktar;
@@ -34,7 +36,7 @@ public class SiparisKalemi {
     @Override
     public String toString() {
         return "SiparisKalemi{" +
-                "urun=" + urun.getAd() +
+                "urun=" + urun.getAdi() +
                 ", miktar=" + miktar +
                 ", siparisBirimFiyati=" + siparisBirimFiyati +
                 ", ara toplam=" + this.araToplam() +

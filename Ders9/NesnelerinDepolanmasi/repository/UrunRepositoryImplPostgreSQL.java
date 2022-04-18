@@ -1,6 +1,4 @@
-package cc.ders9.nesnelerindepolanmasi.crud;
-
-import cc.ders9.nesnelerindepolanmasi.siparis.SiparisKalemi;
+package cc.ders9.nesnelerindepolanmasi.repository;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -9,7 +7,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-public class UrunRepositoryPostgreSQL {
+public class UrunRepositoryImplPostgreSQL implements IUrunRepository {
 
     private Connection baglan(){
 
@@ -29,7 +27,7 @@ public class UrunRepositoryPostgreSQL {
     }
 
     public Urun ara(int urunNumarasi){
-        System.out.println("ürün aranıyor...");
+
         Urun urun=null;
 
         String sql= "SELECT *  FROM \"Urun\" WHERE \"urunNo\"="+urunNumarasi;
@@ -46,6 +44,8 @@ public class UrunRepositoryPostgreSQL {
             String adi;
             int birimFiyati;
             int stokMiktari;
+
+            String soyadi;
 
             while(rs.next())
             {
@@ -70,7 +70,6 @@ public class UrunRepositoryPostgreSQL {
 
     public List<Urun> tumUrunler(){
 
-        System.out.println("ürünleri getiriyor...");
         List<Urun> urunler=new ArrayList<Urun>();
         String sql= "SELECT *  FROM \"Urun\"";
 
@@ -87,6 +86,8 @@ public class UrunRepositoryPostgreSQL {
             String adi;
             int birimFiyati;
             int stokMiktari;
+
+            String soyadi;
 
             while(rs.next())
             {
@@ -108,7 +109,6 @@ public class UrunRepositoryPostgreSQL {
 
 
     public void kaydet(Urun urun){
-        //System.out.println("ürünü kaydediyor..."+urun);
         //String sql= "INSERT INTO  \"Urun\" (\"urunNo\",\"adi\",\"birimFiyati\",\"stokMiktari\") VALUES("+urun.getUrunNo()+",\'"+urun.getAdi()+"\',"+urun.getBirimFiyati()+","+urun.getStokMiktari()+")";
 
         String sql= "INSERT INTO  \"Urun\" (\"adi\",\"birimFiyati\",\"stokMiktari\") VALUES(\'"+urun.getAdi()+"\',"+urun.getBirimFiyati()+","+urun.getStokMiktari()+")";
@@ -129,7 +129,6 @@ public class UrunRepositoryPostgreSQL {
     }
 
     public void sil(int urunNumarasi){
-        System.out.println("ürün siliniyor...");
 
         String sql= "DELETE FROM \"Urun\" WHERE \"urunNo\"="+urunNumarasi;
 
@@ -145,24 +144,8 @@ public class UrunRepositoryPostgreSQL {
         }
     }
 
-    public void degistir(Urun urun) {
 
-        String sql= "UPDATE \"Urun\" SET \"adi\"=\'"+urun.getAdi()+
-                "\', \"birimFiyati\"="+urun.getBirimFiyati()+
-                ",\"stokMiktari\"="+urun.getStokMiktari()+
-                " WHERE \"urunNo\"="+urun.getUrunNo();
 
-        Connection conn=this.baglan();
 
-        try
-        {
-            Statement stmt = conn.createStatement();
-            stmt.executeUpdate(sql);
-            //***** Bağlantı sonlandırma *****
-            conn.close();
-            stmt.close();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
+
 }

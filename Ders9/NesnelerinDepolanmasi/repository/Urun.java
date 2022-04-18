@@ -1,6 +1,4 @@
-package cc.ders9.nesnelerindepolanmasi.siparis;
-
-import java.util.List;
+package cc.ders9.nesnelerindepolanmasi.repository;
 
 public class Urun {
     private int urunNo;
@@ -18,16 +16,22 @@ public class Urun {
         this.birimFiyati = birimFiyati;
         this.stokMiktari = stokMiktari;
     }
+    public Urun(String adi, double birimFiyati, int stokMiktari) {
+
+        this.adi = adi;
+        this.birimFiyati = birimFiyati;
+        this.stokMiktari = stokMiktari;
+    }
 
     public int getUrunNo() {
         return urunNo;
     }
 
-    public String getAd() {
+    public String getAdi() {
         return adi;
     }
 
-    public void setAd(String ad) {
+    public void setAdi(String ad) {
         this.adi = ad;
     }
 
@@ -57,9 +61,4 @@ public class Urun {
                 '}';
     }
 
-   /*public List<Urun> urunleriListele(){
-
-        ret
-
-    }*/
 }

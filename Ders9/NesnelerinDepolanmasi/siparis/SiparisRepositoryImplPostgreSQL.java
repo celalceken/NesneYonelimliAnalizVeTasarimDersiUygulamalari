@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.Statement;
 import java.util.List;
 
-public class SiparisPostgreSQLSurucu implements ISiparisVeritabaniServisi {
+public class SiparisRepositoryImplPostgreSQL implements ISiparisRepository {
     @Override
     public void siparisiKaydet(Siparis siparis) {
 
@@ -30,7 +30,6 @@ public class SiparisPostgreSQLSurucu implements ISiparisVeritabaniServisi {
                 //System.out.println("VT den:" + siparis.getSiparisNo() + "-" + siparisKalemi.getUrun().getUrunNo() + "-" + siparisKalemi.getSiparisBirimFiyati() + "-" + siparisKalemi.getMiktar());
                 // Siparis Kalemlerini  SiparisKalemi tablosuna ekle
                 sql= "INSERT INTO  \"SiparisKalemi\" (\"siparisNo\",\"urunNo\",\"siparisBirimFiyati\",\"miktar\" ) VALUES("+siparis.getSiparisNo()+","+siparisKalemi.getUrun().getUrunNo()+","+siparisKalemi.getSiparisBirimFiyati()+","+siparisKalemi.getMiktar()+") ";
-
                 stmt = conn.createStatement();
                 stmt.executeUpdate(sql);
             }

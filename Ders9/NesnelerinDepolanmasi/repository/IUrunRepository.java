@@ -1,4 +1,4 @@
-package cc.ders9.nesnelerindepolanmasi.crudinterface;
+package cc.ders9.nesnelerindepolanmasi.repository;
 
 import java.util.List;
 
