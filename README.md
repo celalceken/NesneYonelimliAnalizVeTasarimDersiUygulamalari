@@ -5,6 +5,6 @@ Ders Notları SABİS üzerinden haftalık olarak gönderilecektir.
 
 
 Ders tanıtımı için aşağıdaki bağlantıyı inceleyiniz.
-* https://ebs.sakarya.edu.tr/Ders/Detay/552091
+* https://ebs.sakarya.edu.tr/Ders/Detay/573301
 
 ### Notlar sürekli güncellenmektedir...
