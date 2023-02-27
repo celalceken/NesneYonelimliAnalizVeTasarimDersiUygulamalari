@@ -3,10 +3,7 @@
 
 ## İlk Uygulama
 
-* https://docs.oracle.com/javase/tutorial/getStarted/cupojava/index.html
-* Java uygulamaları geliştirebilmek için Java Development Kit (JDK) yazılımını kurmalısınız (aşağıdaki adreslerden birini kullanabilirsiniz).
-    * https://jdk.java.net
-    * https://www.oracle.com/technetwork/java/javase/downloads/jdk13-downloads-5672538.html
+* Java uygulamaları geliştirebilmek için Java Development Kit (JDK) yazılımını kurmalısınız.
 
 ```java
 /**
@@ -42,8 +39,4 @@ Merhaba Dünya
 
 Java programlama dilinin temellerini öğrenmek için kullanabileceğiniz kaynaklar:
 * http://www.w3schools.com/java/ 
-* https://docs.oracle.com/javase/tutorial/index.html
-
-## Java Teknolojisi
-
-* https://docs.oracle.com/javase/tutorial/getStarted/intro/definition.html
+* https://www.geeksforgeeks.org/java-tutorial/
