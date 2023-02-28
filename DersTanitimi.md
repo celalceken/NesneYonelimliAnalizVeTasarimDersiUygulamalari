@@ -19,7 +19,7 @@ Ek bilgi için https://ebs.sabis.sakarya.edu.tr adresine bakabilirsiniz.
 * Ders kapsamında, karmaşık yazılım problemlerinin nesne yönelimli olarak analiz edilebilmesi ve tasarlanması için gerekli becerilerin kazandırılması hedeflenmektedir.
 
 
-![](Sekiller/01/BuyukResim.png)
+![](https://github.com/celalceken/DatabaseManagementSystems/blob/master/Sekiller/01/BuyukResim.png)
 
 ## Değerlendirme
 
