@@ -1,7 +1,7 @@
 # Uygulama Geliştirme Ortamının Oluşturulması
   * https://www.youtube.com/watch?v=XpJElFJdQb0
 
-## İlk Uygulama
+## Java İle İlk Uygulama
 
 * Java uygulamaları geliştirebilmek için Java Development Kit (JDK) yazılımını kurmalısınız.
 
@@ -32,11 +32,14 @@ Program çıktısı
 ```console
 Merhaba Dünya
 ```
-# Bu depoda yer alan uygulamaların IntelliJ IDEA ile çalıştırılması
+## Bu depoda yer alan uygulamaların IntelliJ IDEA ile çalıştırılması
  * https://youtu.be/g_0uV6jEKcM
 
-# Java İle Uygulama Geliştirme
+## Java İle Uygulama Geliştirme
 
 Java programlama dilinin temellerini öğrenmek için kullanabileceğiniz kaynaklar:
 * http://www.w3schools.com/java/ 
 * https://www.geeksforgeeks.org/java-tutorial/
+
+## PostgreSQL için ortam hazırlama
+* https://github.com/celalceken/DatabaseManagementSystems/blob/master/VYS06.md
