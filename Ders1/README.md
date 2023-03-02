@@ -1,4 +1,6 @@
 # Uygulama Geliştirme Ortamının Oluşturulması
+
+## JDK ve IntelliJ IDEA kurulumu
   * https://www.youtube.com/watch?v=XpJElFJdQb0
 
 ## Java İle İlk Uygulama
@@ -35,9 +37,8 @@ Merhaba Dünya
 ## Bu depoda yer alan uygulamaların IntelliJ IDEA ile çalıştırılması
  * https://youtu.be/g_0uV6jEKcM
 
-## Java İle Uygulama Geliştirme
+## Java programlama dilinin temelleri
 
-Java programlama dilinin temellerini öğrenmek için kullanabileceğiniz kaynaklar:
 * http://www.w3schools.com/java/ 
 * https://www.geeksforgeeks.org/java-tutorial/
 
