@@ -10,13 +10,13 @@ public class VeritabaniUygulamasi{
         VeritabaniIslemleriRepository veritabaniIslemleri = new VeritabaniIslemleriRepository(veritabaniSurucu);
         
         //Diğer modüller, veritabanı işlemleri için istemci modülün (repository) ilgili yöntemlerini çağırırlar.
-        veritabaniIslemleri.baglan();
+       
         veritabaniIslemleri.ekle();
         veritabaniIslemleri.idAra(2);
         veritabaniIslemleri.sil();
         veritabaniIslemleri.güncelle();
         veritabaniIslemleri.listele();
-        veritabaniIslemleri.baglantiSonlandir();
+       
     }
 
 }
