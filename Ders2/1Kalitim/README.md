@@ -7,8 +7,14 @@
 > 
 > - Kod tekrar kullanımı sağlanır
 
+## Çalışma Soruları
 
-* Uygulamayı çalıştırmak için
+* Uygulama içerisinde Kare şeklinin de desteklenmesi için gerekli düzenlemeleri yapınız.
+* Temel sınıfta yer alan toString() yöntemini türetilmiş sınıflarda yeniden tanımlayınız (function overriding). Temel sınıftaki üye değişkenlere ek olarak türetilmiş sınıf üyeleri de yazdırılmalıdır.
+
+
+
+## Uygulamayı çalıştırmak için
 
 ```console
 Orka:~ nyat$ javac -d .  KalitimUygulamasi.java Sekil.java Daire.java Dikdortgen.java EskenarUcgen.java 
@@ -23,7 +29,6 @@ konumu = (30.0,50.0) - rengi= mavi
 ```
 
 * Uygulamanın sınıf şeması
-
 
 
 ![](https://github.com/celalceken/NesneYonelimliAnalizVeTasarimDersiUygulamalari/blob/master/Sekiller/02/SinifSemasi.png)
