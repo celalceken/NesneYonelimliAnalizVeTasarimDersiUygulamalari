@@ -1,6 +1,6 @@
 # Kalıtım
 ```
-- Sınıfların diğer sınıflardan oluşturulabilmesine ve böylece kod tekrarının önüne geçilebilmesine imkan verir.
+* Sınıfların diğer sınıflardan oluşturulabilmesine ve böylece kod tekrarının önüne geçilebilmesine imkan verir.
 
 > - Benzer varlıklar arasında olmalıdır. “is a” , “is kind of”
 > 
