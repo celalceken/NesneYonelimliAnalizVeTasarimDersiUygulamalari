@@ -1,5 +1,5 @@
 
-#Kapsülleme (Encapsulation)
+# Kapsülleme (Encapsulation)
 
 * Veri ve bu veriyi kullanan yöntemlerin tek bir yapı (sınıf) içerisinde yer almasını ifade eder. 
 * Nesnenin içerisinde yer alan ayrıntıların diğer nesnelerden gizlenmesini sağlar.
