@@ -1,12 +1,12 @@
 # Kalıtım
 ```
-* Sınıfların diğer sınıflardan oluşturulabilmesine ve böylece kod tekrarının önüne geçilebilmesine imkan verir.
+- Sınıfların diğer sınıflardan oluşturulabilmesine ve böylece kod tekrarının önüne geçilebilmesine imkan verir.
 
-> - Benzer varlıklar arasında olmalıdır. “is a” , “is kind of”
-> 
-> - Türetilmiş sınıf (Derived class) Temel Sınıfın (base class)  üyelerine kalıtım yoluyla sahip olur.
-> 
-> - Kod tekrar kullanımı sağlanır.
+- Benzer varlıklar arasında olmalıdır. “is a” , “is kind of”
+ 
+- Türetilmiş sınıf (Derived class) Temel Sınıfın (base class)  üyelerine kalıtım yoluyla sahip olur.
+ 
+- Kod tekrar kullanımı sağlanır.
 ```
 
 ## Uygulamayı çalıştırmak için
