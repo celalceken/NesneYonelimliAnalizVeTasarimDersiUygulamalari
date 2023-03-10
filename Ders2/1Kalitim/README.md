@@ -28,4 +28,4 @@ konumu = (30.0,50.0) - rengi= mavi
 
 
 ![](https://github.com/celalceken/NesneYonelimliAnalizVeTasarimDersiUygulamalari/blob/master/Sekiller/02/SinifSemasi.png)
->Uygulamanın sınıf şeması
+-Uygulamanın sınıf şeması
