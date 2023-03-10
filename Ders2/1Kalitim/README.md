@@ -7,13 +7,6 @@
 > 
 > - Kod tekrar kullanımı sağlanır
 
-## Çalışma Soruları
-
-* Uygulama içerisinde Kare şeklinin de desteklenmesi için gerekli düzenlemeleri yapınız.
-* Temel sınıfta yer alan toString() yöntemini türetilmiş sınıflarda yeniden tanımlayınız (function overriding). Temel sınıftaki üye değişkenlere ek olarak türetilmiş sınıf üyeleri de yazdırılmalıdır.
-
-
-
 ## Uygulamayı çalıştırmak için
 
 ```console
@@ -28,7 +21,11 @@ konumu = (30.0,50.0) - rengi= mavi
 30.0
 ```
 
-* Uygulamanın sınıf şeması
+## Çalışma Soruları
+
+* Uygulama içerisinde Kare şeklinin de desteklenmesi için gerekli düzenlemeleri yapınız.
+* Temel sınıfta yer alan toString() yöntemini türetilmiş sınıflarda yeniden tanımlayınız (function overriding). Temel sınıftaki üye değişkenlere ek olarak türetilmiş sınıf üyeleri de yazdırılmalıdır.
 
 
 ![](https://github.com/celalceken/NesneYonelimliAnalizVeTasarimDersiUygulamalari/blob/master/Sekiller/02/SinifSemasi.png)
+> Uygulamanın sınıf şeması
