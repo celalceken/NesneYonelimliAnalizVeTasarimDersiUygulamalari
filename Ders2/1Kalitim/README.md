@@ -27,5 +27,6 @@ konumu = (30.0,50.0) - rengi= mavi
 * Temel sınıfta yer alan toString() yöntemini türetilmiş sınıflarda yeniden tanımlayınız (function overriding). Temel sınıftaki üye değişkenlere ek olarak türetilmiş sınıf üyeleri de yazdırılmalıdır.
 
 <hr/>
+
 ![](https://github.com/celalceken/NesneYonelimliAnalizVeTasarimDersiUygulamalari/blob/master/Sekiller/02/SinifSemasi.png)
 <p align="center"> Uygulamanın sınıf şeması</>
