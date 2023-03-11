@@ -16,7 +16,7 @@
 
 ***
 
-<p align="center"> Kapsülleme-Encapsulation>
+<p align="center"> Kapsülleme-Encapsulation
 
 ![](https://github.com/celalceken/NesneYonelimliAnalizVeTasarimDersiUygulamalari/blob/master/Sekiller/Encapsulation.png)
 <p/>
