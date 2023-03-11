@@ -28,7 +28,6 @@ konumu = (30.0,50.0) - rengi= mavi
 * Uygulama içerisinde Kare şeklinin de desteklenmesi için gerekli düzenlemeleri yapınız.
 * Temel sınıfta yer alan toString() yöntemini türetilmiş sınıflarda yeniden tanımlayınız (function overriding). Bu yöntem içerisinde, temel sınıftaki üye değişkenlere ek olarak türetilmiş sınıf üyeleri de yazdırılmalıdır.
 
-<hr/>
-
-![](https://github.com/celalceken/NesneYonelimliAnalizVeTasarimDersiUygulamalari/blob/master/Sekiller/02/SinifSemasi.png)
+***
 <p align="center"> Uygulamanın sınıf şeması</>
+![](https://github.com/celalceken/NesneYonelimliAnalizVeTasarimDersiUygulamalari/blob/master/Sekiller/02/SinifSemasi.png)
