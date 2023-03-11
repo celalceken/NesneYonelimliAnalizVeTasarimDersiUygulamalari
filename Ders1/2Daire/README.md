@@ -16,6 +16,7 @@
 
 ***
 
-<p align="center"> Kapsülleme-Encapsulation </>
+<p align="center"> Kapsülleme-Encapsulation>
 
-![](https://github.com/celalceken/NesneYonelimliAnalizVeTasarimDersiUygulamalari/blob/master/Sekiller/02/SinifSemasi.png)
+![](https://github.com/celalceken/NesneYonelimliAnalizVeTasarimDersiUygulamalari/blob/master/Sekiller/Encapsulation.png)
+<p/>
