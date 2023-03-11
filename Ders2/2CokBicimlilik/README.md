@@ -26,6 +26,6 @@ konumu = (30.0,50.0) - rengi= mavi
 
 ***
 
-
-![](https://github.com/celalceken/NesneYonelimliAnalizVeTasarimDersiUygulamalari/blob/master/Sekiller/02/SinifSemasi.png)
 <p align="center"> Uygulamanın sınıf şeması </>
+![](https://github.com/celalceken/NesneYonelimliAnalizVeTasarimDersiUygulamalari/blob/master/Sekiller/02/SinifSemasi.png)
+
