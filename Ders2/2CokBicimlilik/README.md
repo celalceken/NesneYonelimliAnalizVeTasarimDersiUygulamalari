@@ -19,7 +19,13 @@ konumu = (20.0,20.0) - rengi= mavi
 konumu = (30.0,50.0) - rengi= mavi
 30.0
 ```
+## Çalışma Soruları
 
-* Uygulamanın sınıf şeması
+* Uygulama içerisinde Kare şeklinin de desteklenmesi için gerekli düzenlemeleri yapınız.
+* Oluşturduğunuz Kare nesnesinin yazdırılması için sekilYazdir yöntemini kullanınız.
+
+<hr/>
+
 
 ![](https://github.com/celalceken/NesneYonelimliAnalizVeTasarimDersiUygulamalari/blob/master/Sekiller/02/SinifSemasi.png)
+<p align="center"> Uygulamanın sınıf şeması </>
