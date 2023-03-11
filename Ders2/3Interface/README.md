@@ -25,9 +25,14 @@ konumu = (30.0,50.0) - rengi= mavi
 30.0
 ```
 
-* Uygulamanın sınıf şeması
+## Çalışma Soruları
 
+* MongoDB sürücüsünün de gerçeklemesini  yaparak istemci kod içerisinde kullanılmasını sağlayınız.
 
 ***
 
+<p align="center"> Uygulamanın sınıf şeması </>
+
 ![](https://github.com/celalceken/NesneYonelimliAnalizVeTasarimDersiUygulamalari/blob/master/Sekiller/02/Interface2.png)
+
+
