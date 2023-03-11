@@ -9,10 +9,10 @@
 
 ```java
 /**
-* IlkUygulama.java olarak kaydedilmeli.
+* ilkuygulama.IlkUygulama.java olarak kaydedilmeli.
 *
 */
-public class IlkUygulama 
+public class ilkuygulama.IlkUygulama 
 {
     public static void main(String[] s) {
         System.out.println("Merhaba Dünya");
@@ -22,12 +22,12 @@ public class IlkUygulama
 
 Derleme
 ```console
-javac IlkUygulama.java
+javac ilkuygulama.IlkUygulama.java
 ```
 
 Çalıştırma
 ```console
-java IlkUygulama
+java ilkuygulama.IlkUygulama
 ```
 
 Program çıktısı

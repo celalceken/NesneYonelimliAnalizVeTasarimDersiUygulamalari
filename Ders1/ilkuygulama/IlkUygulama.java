@@ -1,6 +1,7 @@
+package ilkuygulama;
 
 /**
-* IlkUygulama.java olarak kaydedilmeli.
+* ilkuygulama.IlkUygulama.java olarak kaydedilmeli.
 *
 */
 
