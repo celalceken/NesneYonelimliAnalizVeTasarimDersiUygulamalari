@@ -4,8 +4,8 @@
 > - Arayüzler sayesinde:
 >   - gerçeklemeler(sınıflar) henüz ortada yok iken istemci kod içerisinde kullanılabilir 
 >     - gerçekleme ve istemci modüller aynı anda farklı kodlayıcılar tarafından oluşturulabilir (takım çalışması)
->   - yeni özellik eklendiğinde istemci kod değiştirilmez (sözleşme yapılır)
->   - istemci kod, gerçekleme kısmındaki değişikliklerden etkilenmez (bağımlılığın zayıflatılması)
+>   - yeni özellik (örneğin; mongodb, redis vb. için de çalışması) eklendiğinde istemci kod değiştirilmez (sözleşme yapılır)
+>   - istemci kod, gerçekleme kısmındaki değişikliklerden (örneğin; postgresql için zaafiyet içermeyen daha güvenli bir sürücü eklenmek istendiğinde ) etkilenmez (bağımlılığın zayıflatılması)
 >   - aynı istemci kod farklı modüller tarafından defalarca kullanılabilir (kod tekrar kullanımı-code reuse)
 
 
